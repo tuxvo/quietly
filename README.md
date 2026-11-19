@@ -1,4 +1,4 @@
-# Quietly (placeholder name)
+# Quietly
 
 **Version 1.0.0**: the first release.
 
