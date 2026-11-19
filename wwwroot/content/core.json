@@ -1,0 +1,1178 @@
+{
+  "app": {
+    "name": "Quietly",
+    "tagline": "A private place to plan stepping away."
+  },
+  "disclaimer": "This guide is general information, not therapy, medical, or legal advice. If you are in danger, call your local emergency number.",
+  "intake": {
+    "stage": {
+      "title": "Where are you right now?",
+      "help": "There’s no wrong answer. This decides where the guide starts.",
+      "options": [
+        {
+          "id": "stage_deciding",
+          "label": "Still deciding",
+          "note": "I’m not sure yet, and I want to think it through."
+        },
+        {
+          "id": "stage_preparing",
+          "label": "Getting ready",
+          "note": "I’ve decided, and I’m preparing to step away."
+        },
+        {
+          "id": "stage_started",
+          "label": "Already started",
+          "note": "I’ve stopped contact, and I want help holding the line."
+        }
+      ]
+    },
+    "safety": {
+      "title": "Do you ever feel unsafe with this person?",
+      "help": "For example: threats, following or monitoring you, controlling behavior, or violence. This changes how the guide advises you to cut contact.",
+      "options": [
+        {
+          "id": "yes",
+          "label": "Yes",
+          "note": "I’m afraid of what they might do."
+        },
+        {
+          "id": "unsure",
+          "label": "I’m not sure",
+          "note": "Some things worry me, but I can’t tell."
+        },
+        {
+          "id": "no",
+          "label": "No",
+          "note": "It’s painful, but I’m not afraid of them."
+        }
+      ]
+    },
+    "started": {
+      "title": "When did you stop contact?",
+      "help": "This starts your day counter. You can change it later."
+    }
+  },
+  "phases": [
+    {
+      "id": "prepare",
+      "title": "Prepare",
+      "blurb": "Get your reasons, your people and your safety in order before you act."
+    },
+    {
+      "id": "break",
+      "title": "Make the break",
+      "blurb": "The day you stop. Keep it simple and close the side doors."
+    },
+    {
+      "id": "hold",
+      "title": "Hold the line",
+      "blurb": "The first weeks and months, when urges, guilt and pushback show up."
+    },
+    {
+      "id": "rebuild",
+      "title": "Rebuild",
+      "blurb": "Grief, routines, and what you want your life to look like next."
+    }
+  ],
+  "rules": [
+    {
+      "title": "No contact means you don’t start, answer, or go looking.",
+      "body": "No texts, calls, DMs, “accidental” run-ins, likes, or checking their profile. Checking on them through friends counts too."
+    },
+    {
+      "title": "Close the side doors.",
+      "body": "Mutual friends, shared accounts, location sharing and old devices are how contact sneaks back in. This guide walks through each one."
+    },
+    {
+      "title": "Decide your answer before they reach out.",
+      "body": "They probably will. Silence is a complete response, and so is one short, calm sentence that you never expand on."
+    },
+    {
+      "title": "You don’t owe an explanation, a last conversation, or an apology for protecting yourself.",
+      "body": "You can explain if you want to. You are allowed not to."
+    },
+    {
+      "title": "Urges and guilt come in waves.",
+      "body": "They tend to fade faster when you don’t feed them. Each time you wait one out, the next one is usually a little weaker."
+    },
+    {
+      "title": "If safety is a concern, plan first.",
+      "body": "Leaving someone who is controlling or violent can be the most dangerous time. Talk to an advocate before you change anything the other person can see."
+    },
+    {
+      "title": "Can’t cut everything off? Go “low contact”.",
+      "body": "Children, work, housing or money can make full no contact impossible. Keep what remains short, written, practical and unemotional."
+    }
+  ],
+  "steps": [
+    {
+      "id": "c-safety",
+      "phase": "prepare",
+      "title": "Make a safety plan before anything else",
+      "summary": "You said safety may be a concern. Planning first protects you, because the moment someone senses you are pulling away can be when things escalate.",
+      "how": [
+        "Call or text an advocate (see Resources). They can help you plan around your exact situation, including digital safety, and it’s free and confidential.",
+        "Don’t announce your decision, block them, or send a final message until you’ve talked through timing with an advocate.",
+        "Open the Safety page and work through the plan: evidence, a bag, a place to go, a code word, and who to tell.",
+        "Keep a dated record of threats, stalking or harassment, and keep it somewhere they can’t reach."
+      ],
+      "tool": "safety",
+      "requires": [
+        "safety"
+      ],
+      "src": [
+        "ds-safety",
+        "cc-grayrock"
+      ]
+    },
+    {
+      "id": "c-reasons",
+      "phase": "prepare",
+      "title": "Write down your reasons",
+      "summary": "Your future self will need them on the days you doubt yourself.",
+      "how": [
+        "List 5 to 10 specific things, not general feelings: what happened, roughly when, and how you felt afterwards.",
+        "Add the real, unglamorous parts of the relationship, the ones nostalgia edits out.",
+        "Keep the list where you can find it in a hurry. This app has a place for it in the urge toolkit.",
+        "Read it whenever guilt, loneliness or nostalgia starts arguing with you."
+      ],
+      "tool": "reasons",
+      "src": [
+        "sp-parents",
+        "pw-nocontact",
+        "gt-5steps"
+      ]
+    },
+    {
+      "id": "c-support",
+      "phase": "prepare",
+      "title": "Line up at least one safe person",
+      "summary": "Someone who listens without minimizing it, bashing them, or pushing you to “just forgive”.",
+      "how": [
+        "Choose carefully. Share with people who tend to believe you and keep it to themselves.",
+        "Tell them what help looks like: listen, remind you of your reasons, don’t pass messages either way.",
+        "Pick a “backup” person you can text the moment you feel the urge to reach out.",
+        "Consider a therapist, especially one who works with relationship or family trauma."
+      ],
+      "src": [
+        "pt-14ways",
+        "sp-parents",
+        "pt-choosing"
+      ]
+    },
+    {
+      "id": "c-privacy",
+      "phase": "prepare",
+      "title": "Make sure nobody can see you doing this",
+      "summary": "If someone might check your phone, computer, or accounts, sort that out first.",
+      "how": [
+        "Use a private/incognito window, and don’t let the browser save a password for this site.",
+        "If the other person has ever had access to your devices, assume they may be able to see your activity. A library computer or a trusted friend’s device is safer.",
+        "Turn off message previews on your lock screen.",
+        "Learn the Quick exit button (top right, or press Esc three times)."
+      ],
+      "tool": "privacy",
+      "src": [
+        "ds-safety",
+        "ts-digital"
+      ]
+    },
+    {
+      "id": "c-rules",
+      "phase": "prepare",
+      "title": "Decide your rules in writing",
+      "summary": "Vague rules are easy to bend at 1 a.m. Write down what counts as contact and what you’ll do about it.",
+      "how": [
+        "Define what’s off limits: calls, texts, DMs, likes, watching stories, asking friends about them, driving past.",
+        "Define any exceptions, such as kids or work, and exactly which channel and topics they cover.",
+        "Decide what you’ll do if they reach out: nothing, or one fixed sentence.",
+        "Set a review date instead of an end date. One therapist suggests roughly 90 days as a starting point, since that’s about how long habits take to change. It’s a rule of thumb, not a science."
+      ],
+      "src": [
+        "pw-nocontact"
+      ]
+    },
+    {
+      "id": "c-tied",
+      "phase": "prepare",
+      "title": "List everything that’s still tied to them",
+      "summary": "Contact doesn’t only happen by text. Shared things are the usual reason for “just one message”.",
+      "how": [
+        "Make a list: belongings in each direction, keys, documents, money, subscriptions, shared accounts, mail, pets, people.",
+        "Next to each, write how it will be settled with the least contact, such as a third party, one written exchange, or a clean write-off.",
+        "Handle practical matters early, before the break, where you can."
+      ],
+      "src": [
+        "sp-parents",
+        "gt-5steps"
+      ]
+    },
+    {
+      "id": "c-block",
+      "phase": "break",
+      "title": "Close the channels",
+      "summary": "Every open channel is a temptation, and every message they can send is a chance for them to pull you back in.",
+      "how": [
+        "Block or mute on phone, text, email, social media, messaging apps and shared apps.",
+        "Mute rather than block only if you honestly won’t check. If you will check, block.",
+        "Consider blocking accounts of people close to them if those are a way in.",
+        "Take screenshots of any threats or harassment first. Archive, don’t delete."
+      ],
+      "variants": [
+        {
+          "when": "safety",
+          "summary": "Because safety is a concern, don’t block suddenly. Sudden changes can alert someone and raise the risk.",
+          "how": [
+            "Talk with an advocate about timing before you block or mute anything.",
+            "Save and back up evidence somewhere they can’t reach first.",
+            "Change things gradually and plan for how they might react.",
+            "If you’re in immediate danger, call your local emergency number."
+          ]
+        }
+      ],
+      "src": [
+        "sp-parents",
+        "cc-hoover",
+        "pt-choosing",
+        "ts-digital"
+      ]
+    },
+    {
+      "id": "c-accounts",
+      "phase": "break",
+      "title": "Lock down your accounts and location sharing",
+      "summary": "Shared logins and location sharing are quiet ways someone stays in your life, or watches it.",
+      "how": [
+        "Change passwords on email, banking and social accounts. Use unique ones and a password manager.",
+        "Update recovery emails and phone numbers to ones only you can reach, and turn on two-factor authentication.",
+        "Log out of unfamiliar devices, check for email forwarding rules, and remove them from shared accounts and family plans.",
+        "Turn off location sharing in maps, Find My, social apps, fitness and ride-share apps.",
+        "The Safety page has the full checklist you can tick off."
+      ],
+      "tool": "digital",
+      "src": [
+        "ts-digital"
+      ]
+    },
+    {
+      "id": "c-warn",
+      "phase": "break",
+      "title": "Tell your circle how to respond",
+      "summary": "Many people try again through other people. A short heads-up closes that route.",
+      "how": [
+        "Tell the few people who matter: you’re not in contact, and you’d like them not to pass messages or news in either direction.",
+        "Ask them to answer neutrally if the other person contacts them.",
+        "You don’t need to share why. Keep it to one line."
+      ],
+      "scripts": [
+        {
+          "label": "To a mutual friend or relative",
+          "text": "I’m not in contact with them right now. I’d really appreciate it if you didn’t pass messages or news between us, either way. Thank you for understanding."
+        }
+      ],
+      "src": [
+        "cc-hoover",
+        "pt-choosing"
+      ]
+    },
+    {
+      "id": "c-day1",
+      "phase": "break",
+      "title": "Plan the first 48 hours",
+      "summary": "The first days are the hardest to stay still. A plan means you aren’t deciding on the spot.",
+      "how": [
+        "Don’t leave empty evenings. Schedule something for each one, even something small.",
+        "Remove reminders from sight: pack gifts and photos in a box, or hand them to a friend. Keep anything that could matter as evidence.",
+        "Eat, sleep, drink water and move. The basics matter more than they seem.",
+        "Have someone on standby you can text or call.",
+        "Start a new activity or return to an old one to fill the gap."
+      ],
+      "src": [
+        "pw-nocontact",
+        "pt-14ways",
+        "gt-5steps"
+      ]
+    },
+    {
+      "id": "c-urges",
+      "phase": "hold",
+      "title": "Learn your urge routine",
+      "summary": "Urges are normal. What matters is having something to do in the next ten minutes.",
+      "how": [
+        "Pause for ten minutes. Most urges peak and fall without you doing anything.",
+        "Name the feeling underneath: lonely, anxious, angry, guilty, bored.",
+        "Read your reasons. Write the message in the unsent box instead of sending it.",
+        "Then do something that goes against the pull: if you want to hide, go be near people.",
+        "Staying in contact tends to prolong the pain, so each time you wait it out is a real win."
+      ],
+      "tool": "urge",
+      "src": [
+        "pt-5things",
+        "pt-14ways"
+      ]
+    },
+    {
+      "id": "c-reply",
+      "phase": "hold",
+      "title": "Decide how you’ll respond when they reach out",
+      "summary": "Reaching out is common, and the attempt often comes in disguise. Having a plan keeps you from improvising when you’re rattled.",
+      "how": [
+        "Default to no reply. Responding emotionally tells them it still works.",
+        "Learn the usual disguises: apologies and big promises, sudden warmth, “accidental” messages, a crisis, guilt, or someone else delivering the message.",
+        "If you do answer, make it one short, calm, final sentence, and don’t answer what comes back.",
+        "Use the “They contacted me” page to log it and pick a response."
+      ],
+      "tool": "contact",
+      "src": [
+        "cc-hoover",
+        "pt-hoover",
+        "cc-grayrock"
+      ]
+    },
+    {
+      "id": "c-nostalgia",
+      "phase": "hold",
+      "title": "Don’t let nostalgia edit the story",
+      "summary": "Missing someone and being right to leave can both be true.",
+      "how": [
+        "Re-read your reasons when you’re replaying the good times.",
+        "Make a second list: how you often felt during the relationship.",
+        "Avoid scrolling old photos and messages. Put the reminders away.",
+        "Let yourself miss them, and remember it’s a feeling, not an instruction."
+      ],
+      "src": [
+        "gt-5steps",
+        "pt-14ways",
+        "pw-nocontact"
+      ]
+    },
+    {
+      "id": "c-watching",
+      "phase": "hold",
+      "title": "Stop watching them, and stop performing for them",
+      "summary": "Checking their page gives a minute of relief and costs the rest of the day.",
+      "how": [
+        "Unfollow, mute or block. Don’t use second accounts or friends as a window.",
+        "Notice posting that’s meant for them to see. Posting a “new life” signals you still care.",
+        "Be careful with alcohol. It lowers the guard and raises the odds of an impulsive message."
+      ],
+      "src": [
+        "pt-14ways"
+      ]
+    },
+    {
+      "id": "c-hardDays",
+      "phase": "hold",
+      "title": "Plan for hard days",
+      "summary": "Birthdays, anniversaries and holidays are predictable, so they can be planned for.",
+      "how": [
+        "Put the dates in your calendar now: birthdays, anniversaries, family holidays, the day it ended.",
+        "Plan replacement plans: people, places, a ritual that’s yours.",
+        "Tell your backup person the date and ask them to check in.",
+        "Expect a wobble anyway. A wobble doesn’t mean you’re failing."
+      ],
+      "src": [
+        "aw-estrange",
+        "pt-choosing"
+      ]
+    },
+    {
+      "id": "c-log",
+      "phase": "hold",
+      "title": "Keep a contact log",
+      "summary": "If they keep trying, a record helps you see the pattern and, if it ever comes to it, supports a report.",
+      "how": [
+        "Note the date, how they reached you, what they said, and what you did.",
+        "Save screenshots in a place they can’t reach.",
+        "If there are threats, stalking or harassment, report them and ask about protective options where you live."
+      ],
+      "tool": "contact",
+      "src": [
+        "cc-hoover",
+        "ds-safety"
+      ]
+    },
+    {
+      "id": "c-body",
+      "phase": "hold",
+      "title": "Look after the basics",
+      "summary": "Sleep, food, water, daylight and movement carry more weight than they get credit for right now.",
+      "how": [
+        "Keep a rough sleep and meal routine, even a lazy one.",
+        "Get outside every day and move your body in some way you don’t hate.",
+        "Notice numbing habits, such as drinking, overworking, overspending or constant socializing.",
+        "Do some things that give you plain pleasure, without having to earn them."
+      ],
+      "src": [
+        "gt-5steps",
+        "pt-14ways"
+      ]
+    },
+    {
+      "id": "c-grieve",
+      "phase": "rebuild",
+      "title": "Let yourself grieve",
+      "summary": "Grief and relief can sit side by side, even when leaving was clearly right.",
+      "how": [
+        "Schedule time to feel sad instead of outrunning it.",
+        "Expect it to spike around milestones: holidays, birthdays, big news.",
+        "Healing isn’t a straight line, and a bad week doesn’t erase the good ones.",
+        "Anger is common and can be useful for noticing what wasn’t okay, but holding it tightly can keep you tied to them."
+      ],
+      "src": [
+        "gt-5steps",
+        "pt-estrange8",
+        "aw-estrange"
+      ]
+    },
+    {
+      "id": "c-therapy",
+      "phase": "rebuild",
+      "title": "Think about working with a therapist",
+      "summary": "Leaving is a decision. Healing from what led to it is a separate piece of work.",
+      "how": [
+        "Look for someone experienced in relationship or family trauma, abuse recovery, or estrangement.",
+        "It’s common to have trauma-like reactions in the first year: jumpiness, avoidance, intrusive thoughts. A professional can help.",
+        "If you feel hopeless or unsafe at any point, use the crisis resources on the Resources page."
+      ],
+      "src": [
+        "pt-estrange8",
+        "aw-estrange",
+        "sp-parents"
+      ]
+    },
+    {
+      "id": "c-lessons",
+      "phase": "rebuild",
+      "title": "Look for patterns, without blaming yourself",
+      "summary": "The aim is to understand, not to punish yourself.",
+      "how": [
+        "Write down what you’d want, and not want, in relationships from now on.",
+        "Notice patterns you’d like to change, including how you ended up tolerating things.",
+        "Be as fair to yourself as you would be to a friend."
+      ],
+      "src": [
+        "gt-5steps"
+      ]
+    },
+    {
+      "id": "c-future",
+      "phase": "rebuild",
+      "title": "Build a life that isn’t organized around them",
+      "summary": "Over time, the days stop revolving around the absence.",
+      "how": [
+        "Return to old interests, or start something new.",
+        "Invest in other people and, if you need to, a chosen family or community.",
+        "Write a letter from yourself a year from now about what you’ve been exploring and learning."
+      ],
+      "src": [
+        "pw-nocontact",
+        "sp-parents",
+        "aw-estrange"
+      ]
+    },
+    {
+      "id": "c-review",
+      "phase": "rebuild",
+      "title": "Review your rules every so often",
+      "summary": "Review, not abandon. Check in with yourself on a schedule instead of in a weak moment.",
+      "how": [
+        "Every month or two ask: am I safer, steadier and clearer than when I’m in contact?",
+        "Notice whether anything real has changed, as opposed to just time passing.",
+        "If you ever consider reconnecting, start small, set limits ahead of time, and be ready to step away again."
+      ],
+      "src": [
+        "pw-nocontact",
+        "sp-parents",
+        "aw-estrange"
+      ]
+    }
+  ],
+  "safety": {
+    "intro": "Most people who step away are not in danger. Some are, and the risk can be highest around the time of separation. This page is for planning around that. It can’t replace talking to an advocate, who can look at your specific situation.",
+    "signs": {
+      "title": "When to take extra care",
+      "intro": "Advocates take these seriously after a separation. If any apply, talk to an advocate before changing anything the other person can see.",
+      "items": [
+        "They have threatened to hurt or kill you, your children, your pets, or themselves.",
+        "They have choked or strangled you, or used or threatened violence before.",
+        "They have access to weapons.",
+        "They monitor you, follow you, turn up where you are, or track your phone or accounts.",
+        "Their control or jealousy has been getting worse, or got worse when you pulled away.",
+        "They say things like “if I can’t have you, no one can”, or won’t accept that it’s over.",
+        "Your gut says you’re not safe. That counts."
+      ],
+      "note": "Abusers often escalate when they sense they are losing control, so how and when you act matters."
+    },
+    "plan": {
+      "title": "Safety plan",
+      "intro": "Tick things off as you do them. Store paper copies and the bag somewhere they won’t look.",
+      "items": [
+        {
+          "id": "sp-advocate",
+          "title": "Talk to an advocate",
+          "body": "Call or text a domestic violence hotline to go through your situation, including timing and digital safety. It’s free and confidential."
+        },
+        {
+          "id": "sp-evidence",
+          "title": "Gather and protect evidence",
+          "body": "Threatening messages, photos of injuries or damage, medical or police records, and a dated record of incidents. Keep copies somewhere they can’t reach, without putting yourself at greater risk."
+        },
+        {
+          "id": "sp-bag",
+          "title": "Pack a bag and hide it",
+          "body": "With a friend, at work, or somewhere they won’t look. Include ID and important documents (or photos of them), cash, medication, keys, and items for children and pets."
+        },
+        {
+          "id": "sp-place",
+          "title": "Know where you’d go",
+          "body": "A shelter (contact it in advance), a friend’s or relative’s home, or somewhere paid for in cash. Have more than one option."
+        },
+        {
+          "id": "sp-escalation",
+          "title": "Plan for escalation",
+          "body": "Know your exit routes, where children and pets would be safe, and a code word that tells a trusted person to call for help."
+        },
+        {
+          "id": "sp-contact",
+          "title": "Set up safe contact",
+          "body": "A new phone number or prepaid phone, and a safe mailing address such as a PO box. Decide in advance how you’ll respond to promises or threats; strict no contact is often safest."
+        },
+        {
+          "id": "sp-people",
+          "title": "Tell the right people",
+          "body": "A trusted neighbor, your employer, and your child’s school. Give them a photo of the person and tell them what to do if they show up."
+        },
+        {
+          "id": "sp-routine",
+          "title": "Vary your routine",
+          "body": "Change routes, times and regular stops where you can, and keep a spare set of car keys with someone you trust."
+        },
+        {
+          "id": "sp-order",
+          "title": "Ask about a protective order",
+          "body": "An advocate or the court clerk can explain how protective or restraining orders work where you live. An order can give police grounds to act if they contact, find or stalk you."
+        },
+        {
+          "id": "sp-record",
+          "title": "Record every incident",
+          "body": "Date, time, what happened, who saw it. Report threats, especially if an order is in place."
+        }
+      ]
+    },
+    "digital": {
+      "title": "Digital safety checklist",
+      "intro": "Do these in a sensible order and, if you could be in danger, gradually. Sudden changes can alert someone who is watching. Use a device they can’t access when you can.",
+      "items": [
+        {
+          "id": "dg-list",
+          "title": "List every account that holds your life",
+          "body": "Email (including old and work accounts), social media, banking and payment apps, shopping, streaming and gaming, health and fitness, travel, ride-share and food delivery, and cloud storage."
+        },
+        {
+          "id": "dg-passwords",
+          "title": "New, unique passwords",
+          "body": "Strong and different for each account, avoiding personal details. A password manager makes this realistic."
+        },
+        {
+          "id": "dg-recovery",
+          "title": "Fix recovery options",
+          "body": "Change recovery emails and phone numbers to ones only you can reach. Replace security questions they could answer."
+        },
+        {
+          "id": "dg-2fa",
+          "title": "Turn on two-factor authentication",
+          "body": "An authenticator app or a security key is better than texts. Use contact details they can’t get into."
+        },
+        {
+          "id": "dg-sessions",
+          "title": "Log out of unfamiliar devices",
+          "body": "Check the security settings of your email, cloud and social accounts for devices and sessions you don’t recognize."
+        },
+        {
+          "id": "dg-forwarding",
+          "title": "Check email forwarding and filters",
+          "body": "Rules that quietly copy your mail somewhere else are easy to miss."
+        },
+        {
+          "id": "dg-shared",
+          "title": "Remove them from shared accounts and plans",
+          "body": "Shared logins, mobile family plans, Apple Family Sharing, Google Play Family, and streaming accounts."
+        },
+        {
+          "id": "dg-location",
+          "title": "Turn off location sharing",
+          "body": "Maps sharing, Find My and shared contacts, location in social apps, and live tracking in fitness and ride-share apps. Limit which apps can see your location."
+        },
+        {
+          "id": "dg-trackers",
+          "title": "Check for tracking devices",
+          "body": "Look in your car and belongings for tags or trackers. Phones usually warn you about unknown trackers travelling with you."
+        },
+        {
+          "id": "dg-social",
+          "title": "Tighten social media",
+          "body": "Make profiles private, remove contacts who might pass information along (including mutual friends and family), and review third-party apps that can log in. Download your history first if it might be evidence."
+        },
+        {
+          "id": "dg-payments",
+          "title": "Remove saved cards and payment methods",
+          "body": "Devices, ride-share, delivery and shopping apps are easy to forget."
+        },
+        {
+          "id": "dg-monitoring",
+          "title": "Look out for stalkerware",
+          "body": "If your phone seems to be watched (strange battery drain, unknown apps, they know things they shouldn’t), seek help from a different device. Tech-safety organizations can walk you through it."
+        },
+        {
+          "id": "dg-alerts",
+          "title": "Set up login alerts",
+          "body": "Alerts sent to a second email or phone, and a regular glance at recent activity. Keep important files in a password-protected place."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Cover your tracks",
+      "intro": "Practical ways to stop this app, or this whole project, from being found on your device.",
+      "items": [
+        {
+          "id": "pv-private",
+          "title": "Use a private window",
+          "body": "It stops your browser saving history and cookies for the session. It doesn’t hide you from someone who controls your device or network."
+        },
+        {
+          "id": "pv-passwords",
+          "title": "Don’t save the password",
+          "body": "Say no when the browser offers. A password manager with a locked vault is a better place."
+        },
+        {
+          "id": "pv-device",
+          "title": "Use a device they can’t get into",
+          "body": "If they have had access to your phone, computer or cloud accounts, a library computer or a friend’s device is safer for anything sensitive."
+        },
+        {
+          "id": "pv-notifs",
+          "title": "Hide notification previews",
+          "body": "On the lock screen, so messages can’t be read over your shoulder."
+        },
+        {
+          "id": "pv-names",
+          "title": "Be careful what you save and bookmark",
+          "body": "Avoid bookmarks and files with names that reveal what they are."
+        },
+        {
+          "id": "pv-exit",
+          "title": "Know the Quick exit",
+          "body": "The button top right, or Esc pressed three times, signs you out and jumps to another site. It can’t erase your browser history, so combine it with a private window."
+        }
+      ]
+    },
+    "legal": {
+      "title": "Legal and documentation",
+      "intro": "Rules differ a lot between places. These are the questions to bring to a local advocate or legal aid service.",
+      "items": [
+        {
+          "title": "Protective or restraining orders",
+          "body": "What kinds exist where you live, who can ask for one (partners, ex-partners, sometimes family or others), and what it can cover."
+        },
+        {
+          "title": "Harassment and stalking",
+          "body": "Repeated unwanted contact, following, and monitoring can be crimes in many places. Keep a record and ask police or an advocate about reporting."
+        },
+        {
+          "title": "Shared children",
+          "body": "Contact with the other parent may continue through custody arrangements. Ask about parallel parenting, supervised exchanges and court-ordered communication."
+        },
+        {
+          "title": "Housing, money and documents",
+          "body": "Leases, joint accounts, debts, and getting back your ID and belongings. Ask before closing joint accounts or moving out."
+        }
+      ]
+    },
+    "selfHarm": {
+      "title": "If they say they’ll hurt themselves",
+      "body": "Take it seriously, and don’t carry it alone. You are not responsible for being someone’s only safety net. Contact emergency services or a crisis line and tell them what was said; they can arrange a welfare check. In the US, you can also call or text 988 for guidance. Then go back to your plan."
+    }
+  },
+  "urge": {
+    "intro": "You don’t have to win forever, just for the next ten minutes.",
+    "routine": [
+      {
+        "title": "Pause",
+        "body": "Start the timer. Most urges rise, peak and fall on their own."
+      },
+      {
+        "title": "Name the feeling",
+        "body": "What’s underneath: lonely, angry, anxious, guilty, curious, bored?"
+      },
+      {
+        "title": "Read your reasons",
+        "body": "Not the good memories. The real list."
+      },
+      {
+        "title": "Write it, don’t send it",
+        "body": "Put every word in the box below. Nothing here is saved or sent."
+      },
+      {
+        "title": "Do something different",
+        "body": "Move your body, change rooms, or reach a person who’s on your side."
+      }
+    ],
+    "feelings": [
+      {
+        "id": "lonely",
+        "label": "Lonely",
+        "note": "Loneliness wants company, not necessarily them.",
+        "instead": "Go where there are people, or text someone safe. Even 15 minutes helps."
+      },
+      {
+        "id": "anxious",
+        "label": "Anxious",
+        "note": "Anxiety wants certainty. Contact gives a few minutes of relief and a lot of new questions.",
+        "instead": "Breathe in for 4 and out for 6, ten times. Then write three things you know for sure."
+      },
+      {
+        "id": "angry",
+        "label": "Angry",
+        "note": "Anger wants the last word.",
+        "instead": "Write it all in the unsent box, then go for a fast walk. Decide about it tomorrow, if you still want to."
+      },
+      {
+        "id": "sad",
+        "label": "Sad",
+        "note": "Sadness wants comfort. Contacting them risks reopening the wound.",
+        "instead": "Let it be there. Put on something warm, make something to eat, and be kind to yourself."
+      },
+      {
+        "id": "guilty",
+        "label": "Guilty",
+        "note": "Guilt can show up even when you did nothing wrong. It can just mean you’re breaking an old rule.",
+        "instead": "Read your reasons, and talk to your safe person."
+      },
+      {
+        "id": "curious",
+        "label": "Curious",
+        "note": "Checking on them gives a short hit of relief and a long afternoon of feeling worse.",
+        "instead": "Ask what you hope to feel. Delete the shortcut and mute the account."
+      },
+      {
+        "id": "bored",
+        "label": "Bored or empty",
+        "note": "Empty time is where urges grow.",
+        "instead": "Do something with your hands or body: clean one drawer, cook, stretch, tidy a playlist."
+      },
+      {
+        "id": "nostalgic",
+        "label": "Nostalgic",
+        "note": "You’re replaying the highlight reel.",
+        "instead": "Read your honest list of how it really felt."
+      }
+    ],
+    "ideas": [
+      "Take a walk around the block, or somewhere with trees.",
+      "Have a warm shower and put on clean clothes.",
+      "Call or text your backup person.",
+      "Cook something simple.",
+      "Tidy one small thing.",
+      "Watch something that makes you laugh.",
+      "Stretch, or do ten minutes of exercise.",
+      "Step outside and name five things you can see, four you can hear, three you can feel.",
+      "Journal for ten minutes.",
+      "Go somewhere with other people, like a café, a library or a gym."
+    ]
+  },
+  "contact": {
+    "intro": "Take a breath before you do anything. Pick what they sent, and this will show what it usually means and what you can do.",
+    "safetyFirst": "If they have threatened you or themselves, are outside, or you feel unsafe, skip this page: use the Safety page or call your local emergency number.",
+    "types": [
+      {
+        "id": "apology",
+        "label": "An apology or promise to change",
+        "looksLike": "“I’m sorry. I’ve changed. I’m getting help. Give me one more chance.”",
+        "whatItIs": "Real change shows up over time in what someone does and in respect for your boundary. It doesn’t arrive as a message that asks you to reply. When apologies shift blame back to you, or come with big promises, they’re a common way to pull someone back.",
+        "do": [
+          "Default to no reply.",
+          "Show the message to your safe person before deciding anything.",
+          "Look for accountability, not promises: do they respect your no, without pressure?",
+          "Save a copy in your log."
+        ],
+        "scripts": [
+          {
+            "label": "If you choose to reply once",
+            "text": "I got your message. I’m not available for contact, and I won’t be replying further."
+          }
+        ]
+      },
+      {
+        "id": "warmth",
+        "label": "Sudden warmth, gifts, or big declarations",
+        "looksLike": "Flowers, compliments, “I can’t stop thinking about you”, talk about the future.",
+        "whatItIs": "Sudden intensity right after you’ve pulled away is a known pattern. It feels like proof that they’ve changed. It’s worth asking what happens after you respond.",
+        "do": [
+          "Don’t reply and don’t accept deliveries.",
+          "Notice how it feels. Hopeful and unsettled at once is typical.",
+          "Re-read your reasons.",
+          "Log it."
+        ],
+        "scripts": []
+      },
+      {
+        "id": "casual",
+        "label": "A casual hello, “wrong number”, or birthday or holiday message",
+        "looksLike": "“Hey.” “Thinking of you.” “Happy birthday!” A vague post or story.",
+        "whatItIs": "Low-effort messages designed to get a reply. Vague is deliberate: it leaves you to carry the conversation.",
+        "do": [
+          "No reply is the full response.",
+          "Block the number or account if you haven’t.",
+          "If it’s a holiday or birthday, tell your support person it’s coming."
+        ],
+        "scripts": []
+      },
+      {
+        "id": "crisis",
+        "label": "A crisis: illness, an emergency, or “I’ll hurt myself”",
+        "looksLike": "“Mom is in the hospital.” “I can’t do this without you.” “You’ll be sorry if something happens to me.”",
+        "whatItIs": "Real emergencies exist, and so do emergencies that appear when someone is losing access to you. Either way, you don’t have to be the one to handle them. Threats to hurt themselves should always be taken seriously, and routed to people trained for it.",
+        "do": [
+          "If anyone is at risk of harm, contact emergency services or a crisis line and tell them what was said. They can arrange a welfare check. (US: call or text 988 for guidance.)",
+          "For an illness or family emergency, check through someone else you trust rather than reopening the conversation.",
+          "Keep the response factual and brief, and leave it there."
+        ],
+        "scripts": [
+          {
+            "label": "If they say they might harm themselves",
+            "text": "I’m worried about your safety, so I’m going to ask someone who can help to check on you. I won’t be in contact."
+          }
+        ]
+      },
+      {
+        "id": "guilt",
+        "label": "Guilt trips: “after everything I’ve done for you”",
+        "looksLike": "“How could you do this to me?” “You’re breaking my heart.” “You’ll regret this.”",
+        "whatItIs": "Guilt is the feeling pressure is designed to produce. Their guilt trip is about their feelings, and doesn’t mean your decision was wrong.",
+        "do": [
+          "Name it to yourself: this is pressure, not new information.",
+          "Don’t debate. Arguments only give them more material.",
+          "If you reply at all, keep it to one calm sentence."
+        ],
+        "scripts": [
+          {
+            "label": "If you reply",
+            "text": "I understand you’re upset. I’m not changing my decision."
+          },
+          {
+            "label": "Ending a conversation",
+            "text": "I’m not going to discuss this. I’m ending this conversation now."
+          }
+        ]
+      },
+      {
+        "id": "anger",
+        "label": "Anger, insults, or threats",
+        "looksLike": "Abusive messages, ultimatums, or promises of consequences.",
+        "whatItIs": "A way to get a reaction, and sometimes a real warning. Don’t respond, and take threats seriously.",
+        "do": [
+          "Don’t reply. Take screenshots and save them where they can’t reach.",
+          "If there’s a threat, report it and ask about protective options.",
+          "If you’re afraid for your safety, call your local emergency number, or use the Safety page."
+        ],
+        "scripts": []
+      },
+      {
+        "id": "relay",
+        "label": "Messages passed through other people",
+        "looksLike": "A friend or relative says “they just want to talk” or “they’re really struggling”.",
+        "whatItIs": "A familiar route: the person reaches you through people who care about you. Often the messenger means well.",
+        "do": [
+          "Be kind to the messenger and firm about the message.",
+          "Ask them to stop passing things along, in either direction.",
+          "If they keep going, you can limit contact with them too."
+        ],
+        "scripts": [
+          {
+            "label": "To the messenger",
+            "text": "I know you care about both of us. Please don’t pass messages or updates, in either direction. I’m not discussing this. How are you doing?"
+          },
+          {
+            "label": "If they push",
+            "text": "I’m not going to talk about it. If it keeps coming up, I’ll have to step back from this conversation too."
+          }
+        ]
+      },
+      {
+        "id": "closure",
+        "label": "“One last conversation” or “we need closure”",
+        "looksLike": "“Let’s just talk, in person, so we can part properly.”",
+        "whatItIs": "A conversation that reopens everything and rarely produces the closure promised. You can get closure on your own terms, from your own list and your own letter.",
+        "do": [
+          "Remind yourself you don’t owe a final conversation.",
+          "If something really must be settled (belongings, money, legal), do it in writing or through a third party, not in person.",
+          "Write the unsent letter instead."
+        ],
+        "scripts": [
+          {
+            "label": "If you need to decline",
+            "text": "I’m not available for a conversation. If there’s something practical to settle, please put it in writing."
+          }
+        ],
+        "only": [
+          "ex",
+          "friend",
+          "other"
+        ]
+      },
+      {
+        "id": "logistics",
+        "label": "A practical request: kids, belongings, bills, or work",
+        "looksLike": "“Can you do Saturday for the pickup?” “Where are the keys?”",
+        "whatItIs": "Some contact is unavoidable. Keep it short, written, and limited to the topic, a rule of thumb sometimes called being brief, informative, friendly and firm.",
+        "do": [
+          "Reply only to the practical question, in writing.",
+          "Don’t respond to anything off topic.",
+          "For shared children, consider a co-parenting app that keeps a record."
+        ],
+        "scripts": [
+          {
+            "label": "A practical reply",
+            "text": "Thanks for letting me know. Saturday at 10 works. I’ll drop off at the front desk."
+          },
+          {
+            "label": "If they drift off topic",
+            "text": "I’ll only be discussing the schedule. Please confirm Saturday at 10."
+          }
+        ]
+      },
+      {
+        "id": "showup",
+        "label": "They show up, follow, or watch me",
+        "looksLike": "At your door, your work or school, or unexpectedly everywhere you go.",
+        "whatItIs": "This may be stalking, and it can be a safety issue. It is not a contact problem you need to solve politely.",
+        "do": [
+          "Don’t open the door or engage. Get somewhere safe and call your local emergency number if you feel at risk.",
+          "Write down the date, time, and what happened. Save photos or video if you safely can.",
+          "Open the Safety page, tell trusted people, and ask an advocate about protective orders."
+        ],
+        "scripts": []
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "r-ndvh",
+      "name": "National Domestic Violence Hotline",
+      "region": "United States",
+      "desc": "24/7, free and confidential. Support for anyone in or leaving a controlling or abusive relationship, or unsure whether theirs is. They can help with safety planning, including around technology.",
+      "contact": "Call 1-800-799-7233 · Text START to 88788",
+      "url": "https://www.thehotline.org",
+      "tel": "18007997233"
+    },
+    {
+      "id": "r-988",
+      "name": "988 Suicide & Crisis Lifeline",
+      "region": "United States",
+      "desc": "Free support if you are in distress or worried about someone else, by call, text or chat.",
+      "contact": "Call or text 988",
+      "url": "https://988lifeline.org",
+      "tel": "988"
+    },
+    {
+      "id": "r-ctl",
+      "name": "Crisis Text Line",
+      "region": "United States",
+      "desc": "Text with a trained crisis counselor, any time.",
+      "contact": "Text HOME to 741741",
+      "url": "https://www.crisistextline.org"
+    },
+    {
+      "id": "r-rainn",
+      "name": "RAINN",
+      "region": "United States",
+      "desc": "Support for survivors of sexual assault, and their loved ones.",
+      "contact": "Call 1-800-656-4673",
+      "url": "https://www.rainn.org",
+      "tel": "18006564673"
+    },
+    {
+      "id": "r-childhelp",
+      "name": "Childhelp National Child Abuse Hotline",
+      "region": "United States",
+      "desc": "For young people who are being hurt, or adults worried about a child. If you are under 18 and unsafe at home, you can also tell a school counselor or another adult you trust.",
+      "contact": "Call 1-800-422-4453",
+      "url": "https://www.childhelp.org",
+      "tel": "18004224453"
+    },
+    {
+      "id": "r-helpline",
+      "name": "Find a Helpline",
+      "region": "Worldwide",
+      "desc": "A directory of free, confidential helplines in many countries. Use it if you’re outside the US.",
+      "contact": "Choose your country on the site",
+      "url": "https://findahelpline.com"
+    },
+    {
+      "id": "r-techsafety",
+      "name": "Safety Net (NNEDV)",
+      "region": "United States",
+      "desc": "Guides on technology safety for survivors, including phones, location tracking and online accounts.",
+      "contact": "techsafety.org",
+      "url": "https://www.techsafety.org"
+    },
+    {
+      "id": "r-womenslaw",
+      "name": "WomensLaw.org",
+      "region": "United States",
+      "desc": "Plain-language legal information for people experiencing abuse, including protective orders by state.",
+      "contact": "womenslaw.org",
+      "url": "https://www.womenslaw.org"
+    },
+    {
+      "id": "r-alanon",
+      "name": "Al-Anon",
+      "region": "Worldwide",
+      "desc": "Peer support for friends and family of people with a drinking problem.",
+      "contact": "al-anon.org",
+      "url": "https://al-anon.org"
+    },
+    {
+      "id": "r-emergency",
+      "name": "Local emergency number",
+      "region": "Everywhere",
+      "desc": "If you or someone else is in immediate danger.",
+      "contact": "911 (US, Canada) · 999 (UK) · 112 (EU)",
+      "url": ""
+    }
+  ],
+  "sources": [
+    {
+      "id": "sp-parents",
+      "title": "Going No Contact With Parents: What It Means, Why People Do It, and How to Cope",
+      "by": "Simply Psychology",
+      "url": "https://www.simplypsychology.org/going-no-contact-with-parents.html"
+    },
+    {
+      "id": "pt-estrange8",
+      "title": "8 Things to Know If You Are Thinking About Estrangement",
+      "by": "Psychology Today",
+      "url": "https://psychologytoday.com/ie/blog/tech-support/202310/8-things-to-know-if-you-are-thinking-about-estrangement"
+    },
+    {
+      "id": "sp-friend",
+      "title": "How To Break Up With A Friend: 7 Steps To Avoid The Drama",
+      "by": "Simply Psychology",
+      "url": "https://www.simplypsychology.org/how-to-break-up-with-a-friend-7-steps-to-avoid-the-drama.html"
+    },
+    {
+      "id": "cc-hoover",
+      "title": "Hoovering: What It Is and How to Respond",
+      "by": "Cleveland Clinic",
+      "url": "https://health.clevelandclinic.org/hoovering"
+    },
+    {
+      "id": "ds-safety",
+      "title": "A Guide to Domestic Violence Safety Planning",
+      "by": "DomesticShelters.org",
+      "url": "https://www.domesticshelters.org/articles/comprehensive-guides/a-guide-to-domestic-violence-safety-planning"
+    },
+    {
+      "id": "ts-digital",
+      "title": "Digital Breakup Checklist: Online Safety After Separation",
+      "by": "TechSafety.ca",
+      "url": "https://techsafety.technicalities.ca/resources/toolkits/digital-breakup-checklist-online-safety-after-separation/"
+    },
+    {
+      "id": "pt-scripts35",
+      "title": "35 Scripts Trauma Survivors Can Use to Set Family Boundaries",
+      "by": "Psychology Today",
+      "url": "https://psychologytoday.com/sg/blog/simplifying-complex-trauma/202211/35-scripts-trauma-survivors-set-family-boundaries"
+    },
+    {
+      "id": "cc-parallel",
+      "title": "Parallel Parenting",
+      "by": "Cleveland Clinic",
+      "url": "https://health.clevelandclinic.org/parallel-parenting"
+    },
+    {
+      "id": "pt-hoover",
+      "title": "Don’t Get Hoovered by Toxic People",
+      "by": "Psychology Today",
+      "url": "https://www.psychologytoday.com/us/blog/here-there-and-everywhere/202206/dont-get-hoovered-by-toxic-people"
+    },
+    {
+      "id": "gt-5steps",
+      "title": "5 Steps to Getting Over a Breakup",
+      "by": "GoodTherapy",
+      "url": "https://www.goodtherapy.org/blog/?p=25305"
+    },
+    {
+      "id": "pw-nocontact",
+      "title": "What Is the No-Contact Rule After a Breakup? A Therapist Explains",
+      "by": "PureWow",
+      "url": "https://www.purewow.com/wellness/no-contact-rule-explained"
+    },
+    {
+      "id": "mha-boundaries",
+      "title": "How Can I Set Boundaries With My Family?",
+      "by": "Mental Health America",
+      "url": "https://screening.mhanational.org/content/how-can-i-set-boundaries-my-family/"
+    },
+    {
+      "id": "aw-estrange",
+      "title": "Family Estrangement: A Guide to Going No Contact",
+      "by": "Annie Wright, LMFT",
+      "url": "https://anniewright.com/family-estrangement-going-no-contact-guide/"
+    },
+    {
+      "id": "cc-grayrock",
+      "title": "Grey Rock Method",
+      "by": "Cleveland Clinic",
+      "url": "https://health.clevelandclinic.org/grey-rock-method"
+    },
+    {
+      "id": "pt-choosing",
+      "title": "Choosing No Contact With a Toxic Family Member",
+      "by": "Psychology Today",
+      "url": "https://www.psychologytoday.com/nz/blog/brothers-sisters-strangers/202306/choosing-no-contact-with-a-toxic-family-member"
+    },
+    {
+      "id": "pt-5things",
+      "title": "Do These 5 Things Before Texting Your Ex",
+      "by": "Psychology Today",
+      "url": "https://www.psychologytoday.com/us/blog/mapping-your-mental-health-journey/202402/do-these-5-things-before-texting-your-ex"
+    },
+    {
+      "id": "pt-14ways",
+      "title": "14 Ways to Heal After a Rough Breakup",
+      "by": "Psychology Today",
+      "url": "https://www.psychologytoday.com/gb/blog/state-of-anxiety/202208/14-ways-to-heal-after-a-rough-breakup"
+    },
+    {
+      "id": "pt-5strat",
+      "title": "5 Strategies to Cope With Toxic Family Members",
+      "by": "Psychology Today",
+      "url": "https://psychologytoday.com/intl/blog/in-flux/202204/5-strategies-cope-toxic-family-members"
+    }
+  ],
+  "assistant": {
+    "title": "Ask a question",
+    "intro": "Ask anything the guide doesn’t cover. It answers in plain words and can suggest what to say or where to look.",
+    "chips": [
+      "What do I say if they text me?",
+      "I feel guilty. Did I make the wrong call?",
+      "How do I handle mutual friends?",
+      "I want to reach out. Help me wait."
+    ],
+    "placeholder": "Type your question",
+    "notice": "AI can be wrong. It isn’t a therapist, doctor or lawyer. If you’re in danger, call your local emergency number.",
+    "consent": {
+      "title": "Before you start",
+      "points": [
+        "This is an AI (Google’s Gemini). It can be wrong, so double-check anything important.",
+        "Only what you type in this chat is sent to Google to get an answer. Your answers, checklist, journal and username are not sent.",
+        "Google may keep what you type for a limited time to check for misuse. Please don’t type names, addresses or other details that identify you or the other person.",
+        "This chat isn’t saved anywhere. It disappears when you sign out, use Quick exit, or close the tab."
+      ],
+      "accept": "I understand, continue",
+      "decline": "Not now"
+    }
+  }
+}

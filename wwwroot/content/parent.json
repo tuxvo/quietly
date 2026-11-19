@@ -1,0 +1,334 @@
+{
+  "id": "parent",
+  "label": "A parent",
+  "blurb": "A mother, father, step-parent or other parental figure.",
+  "intro": {
+    "title": "Stepping away from a parent",
+    "body": [
+      "Cutting contact with a parent is usually a last resort after years of trying other things. It is also one of the hardest versions of this, because of guilt, family pressure, and the loss of the parent you hoped for.",
+      "This path covers the decision, the practical loose ends, the pushback from relatives, and the long emotional part afterwards."
+    ]
+  },
+  "questions": [
+    {
+      "id": "shared",
+      "type": "multi",
+      "title": "What is still tied together?",
+      "help": "Pick any that apply. It changes which steps you see.",
+      "options": [
+        { "id": "dependent", "label": "I still live with them or rely on them for money or housing" },
+        { "id": "caregiving", "label": "They depend on me for care or support" },
+        { "id": "kids", "label": "I have children they would want to see" },
+        { "id": "siblings", "label": "I have siblings or relatives who are still in contact" },
+        { "id": "money", "label": "We have shared money, loans, or legal ties" }
+      ]
+    }
+  ],
+  "expect": [
+    { "title": "Pushback from relatives", "body": "Family members, even ones who were also hurt, may side with your parent, call you cold or ungrateful, or ask you to reconsider." },
+    { "title": "People sent to pressure you", "body": "Relatives, family friends or religious contacts may be asked to change your mind. The “flying monkeys” step has scripts." },
+    { "title": "Mixed feelings", "body": "Relief, guilt, grief and anger can all show up in one afternoon. You can love someone and still need distance." },
+    { "title": "Waves of grief at milestones", "body": "Holidays, weddings, births and illness can bring back doubt. Planning ahead helps." },
+    { "title": "A long recovery", "body": "Your nervous system may take a year or more to stop bracing around them. That’s expected, and help exists." }
+  ],
+  "steps": [
+    {
+      "id": "par-dependent",
+      "phase": "prepare",
+      "title": "If you still depend on them, plan your way out first",
+      "summary": "No contact isn’t always possible yet. You can still build the exit and protect yourself in the meantime.",
+      "how": [
+        "Build your independence one piece at a time: savings, documents (ID, birth certificate), income, a housing option.",
+        "Until you’re out, limit emotional exposure: share little, keep conversations brief, leave when it turns hostile.",
+        "Find at least one trusted adult: a relative, teacher, counselor, doctor, or coach.",
+        "If you’re under 18 and unsafe, tell a school counselor or call a child abuse hotline (see Resources)."
+      ],
+      "tool": "safety",
+      "requires": ["dependent"],
+      "src": ["pt-5strat", "sp-parents"]
+    },
+    {
+      "id": "par-decide",
+      "phase": "prepare",
+      "title": "Check you’re choosing from clarity, not impulse",
+      "summary": "Many people who step away have tried to repair things for years. Make sure you know what the options are.",
+      "how": [
+        "Ask: have my boundaries been ignored repeatedly? Is contact seriously harming my mental health? Do I feel unsafe, unheard, or disrespected? Have I tried other approaches?",
+        "There’s a range: firm boundaries, limited topics, time-limited visits, a temporary timeout, low contact, then no contact. Low contact is a legitimate choice on its own.",
+        "Consider what it costs you and how it fits your finances, culture and community.",
+        "Tell the difference between a reactive cutoff after a blow-up and a considered decision made from clarity about what you need."
+      ],
+      "requires": ["stage_deciding"],
+      "src": ["sp-parents", "aw-estrange", "pt-estrange8"]
+    },
+    {
+      "id": "par-low",
+      "phase": "prepare",
+      "title": "Consider whether low contact might be enough",
+      "summary": "If you aren’t ready for a full break, or can’t yet, you can set tighter limits.",
+      "how": [
+        "Limit contact: shorter visits, public places, a buffer person, calls only on set days.",
+        "Share little personal information, and keep conversations brief.",
+        "Leave the moment conflict starts. You’re allowed to.",
+        "With people who thrive on reaction, “grey rock” means staying calm, brief and uninteresting. It’s a short-term tool with a mental cost, not a long-term plan."
+      ],
+      "scripts": [
+        { "label": "Ending a conversation", "text": "I’m not going to discuss this. I’m going to go now. I’ll talk to you another time." },
+        { "label": "Setting a limit on the topic", "text": "I’m happy to talk about the family, work, and the weather. I won’t talk about my relationships or money." }
+      ],
+      "src": ["pt-5strat", "cc-grayrock", "pt-scripts35"]
+    },
+    {
+      "id": "par-legal",
+      "phase": "prepare",
+      "title": "Sort out the practical and legal loose ends",
+      "summary": "Better to do this calmly now than during a family emergency.",
+      "how": [
+        "Update emergency contacts, health-care proxies, beneficiaries and anywhere they’re listed on your documents.",
+        "Decide who you’d want to be told if they became seriously ill, or died, and what you would or wouldn’t do. Tell a trusted person so it isn’t decided in the moment.",
+        "If inheritance or family property is involved, a lawyer can explain your position.",
+        "Notice that holidays, weddings and funerals can make you reconsider. Having decided in advance helps."
+      ],
+      "src": ["sp-parents", "pt-choosing"]
+    },
+    {
+      "id": "par-money",
+      "phase": "prepare",
+      "title": "Untangle money and shared accounts",
+      "summary": "Anything shared can become a reason for contact, or a lever.",
+      "how": [
+        "List joint accounts, co-signed loans, phone and streaming plans, insurance, and anywhere you’re listed as their dependent or contact.",
+        "Open accounts in your name only and move things over.",
+        "Consider freezing your credit and checking your credit reports.",
+        "Get advice before closing anything joint."
+      ],
+      "requires": ["money"],
+      "src": ["ts-digital"]
+    },
+    {
+      "id": "par-caregiving",
+      "phase": "prepare",
+      "title": "If they need care, decide what you’re able to do",
+      "summary": "You’re allowed to stop being their caregiver, and there are other ways their needs can be met.",
+      "how": [
+        "Work out what you will and won’t do. Even stepping back can be a choice.",
+        "Involve other relatives, a social worker, a care agency or community services so it doesn’t rest on you.",
+        "In some places there are laws about supporting parents. They’re rarely enforced, but ask a lawyer if this applies to you.",
+        "Tell a trusted person your plan, so you’re not alone with the guilt."
+      ],
+      "requires": ["caregiving"],
+      "src": ["pt-choosing", "sp-parents"]
+    },
+    {
+      "id": "par-siblings",
+      "phase": "prepare",
+      "title": "Decide what to say to siblings and relatives",
+      "summary": "Some will understand and some won’t. You choose what to share.",
+      "how": [
+        "Decide, for each person: tell them everything, a little, or nothing.",
+        "Don’t ask them to choose sides. Keep those relationships separate where you can.",
+        "Ask them not to carry messages either way.",
+        "Expect some to distance themselves or to ask for explanations. You don’t have to give them."
+      ],
+      "scripts": [
+        { "label": "A short, complete answer", "text": "I’m not in contact with them right now. I’d rather not get into why, but I’d love to stay close to you." }
+      ],
+      "requires": ["siblings"],
+      "src": ["pt-estrange8", "sp-parents", "aw-estrange"]
+    },
+    {
+      "id": "par-kids",
+      "phase": "prepare",
+      "title": "Decide about your children’s contact",
+      "summary": "As their caregiver, the decision is yours.",
+      "how": [
+        "Decide what contact, if any, your children will have, and the conditions.",
+        "A child’s primary caregiver is responsible for the child’s welfare. Relatives aren’t automatically in charge and you can set the boundaries you think are needed.",
+        "Explain it to children simply and age-appropriately, without blaming.",
+        "Tell school and other caregivers who may collect them."
+      ],
+      "requires": ["kids"],
+      "src": ["mha-boundaries"]
+    },
+    {
+      "id": "par-tell",
+      "phase": "break",
+      "title": "Decide whether to tell them, and how",
+      "summary": "A short, calm statement is complete. You don’t need their agreement.",
+      "how": [
+        "Options: simply stop responding, send a brief message, or send a letter.",
+        "If you send something: state the decision, not the case. Don’t debate, don’t ask for acknowledgment, don’t invite a reply.",
+        "Keep a copy. Then block, so you’re not waiting for a reaction.",
+        "Writing a longer letter just for yourself can help you get it out. You don’t have to send it."
+      ],
+      "scripts": [
+        { "label": "A brief message", "text": "I need space, and I won’t be in contact for now. Please respect that." },
+        { "label": "If they keep going", "text": "I’ve asked for space. I won’t be replying to further messages." }
+      ],
+      "variants": [
+        {
+          "when": "safety",
+          "summary": "If they could react with violence or retaliation, don’t send anything yet.",
+          "how": [
+            "Talk to an advocate before you tell them.",
+            "Consider whether telling them at all is needed. Quietly stopping may be safer.",
+            "Document any threats, and ask about protective orders."
+          ]
+        }
+      ],
+      "src": ["sp-parents", "aw-estrange", "mha-boundaries"]
+    },
+    {
+      "id": "par-door",
+      "phase": "break",
+      "title": "Prepare for surprise visits",
+      "summary": "Some parents turn up when they can’t reach you.",
+      "how": [
+        "Remove tracking and location sharing, and secure your accounts.",
+        "Tell a trusted neighbor or friend, and decide your response: not opening the door, or one sentence through it.",
+        "Think about what you’d say, and whether to call someone.",
+        "In extreme cases, legal measures such as a no-trespass notice or protective order may be options."
+      ],
+      "scripts": [
+        { "label": "At the door", "text": "I’m not available to talk. Please leave. I’ll call someone if you stay." }
+      ],
+      "tool": "digital",
+      "src": ["sp-parents", "ts-digital"]
+    },
+    {
+      "id": "par-flying",
+      "phase": "hold",
+      "title": "Handle relatives who are sent to pressure you",
+      "summary": "Other people delivering the message is a very common move. Be kind to the messenger and firm about the message.",
+      "how": [
+        "Don’t argue the history with them. They weren’t there for all of it, and they don’t need to agree.",
+        "Their guilt and their pressure belong to them. It doesn’t mean you’re wrong.",
+        "You can end a conversation any time.",
+        "If someone keeps pushing, you can limit contact with them as well."
+      ],
+      "scripts": [
+        { "label": "Short and warm", "text": "I know you care about all of us. This decision isn’t up for debate. I’d love to talk about something else." },
+        { "label": "If they push", "text": "I’m not going to discuss it. If it keeps coming up, I’ll have to step back from this conversation too." },
+        { "label": "Asking them to stop carrying messages", "text": "Please don’t pass messages or updates between us. If I want to be in touch, I’ll be in touch." }
+      ],
+      "src": ["sp-parents", "mha-boundaries", "pt-scripts35"]
+    },
+    {
+      "id": "par-guilt",
+      "phase": "hold",
+      "title": "Make room for guilt, and don’t obey it",
+      "summary": "Guilt is a feeling, not a verdict.",
+      "how": [
+        "Mixed feelings, including relief, are common. You can love a parent and still need distance.",
+        "Cultural, religious and family expectations (the dutiful daughter, the responsible eldest) can make it louder.",
+        "Regret is common too, and doesn’t automatically mean it was the wrong call.",
+        "Read your reasons. Guilt can show up even when it doesn’t match what you actually believe is true."
+      ],
+      "tool": "reasons",
+      "src": ["sp-parents", "mha-boundaries", "aw-estrange"]
+    },
+    {
+      "id": "par-smear",
+      "phase": "hold",
+      "title": "Stay steady if they tell their version",
+      "summary": "A parent who’s lost access may tell a different story to relatives. You don’t have to counter it.",
+      "how": [
+        "You can’t control what they say. Defending yourself rarely changes minds.",
+        "Choose a few people who need to know, and give them a short, factual version.",
+        "Family members remember events differently. Looking to relatives for validation tends to deepen the divide.",
+        "Seek validation from a therapist, or people who’ve been through it."
+      ],
+      "src": ["pt-estrange8", "sp-parents"]
+    },
+    {
+      "id": "par-hoover",
+      "phase": "hold",
+      "title": "Expect attempts to reopen contact",
+      "summary": "Gifts, guilt, “I’m sick”, money, or a sudden apology can all be ways back in.",
+      "how": [
+        "Real change shows up in sustained behavior and respect for your boundary, not in a single message.",
+        "Don’t respond emotionally. Respond briefly or not at all.",
+        "If they say they’ll hurt themselves, take it seriously: contact emergency services or a crisis line, and tell them what was said.",
+        "Log every attempt on the contact page."
+      ],
+      "tool": "contact",
+      "src": ["cc-hoover", "sp-parents"]
+    },
+    {
+      "id": "par-holidays",
+      "phase": "hold",
+      "title": "Plan the holidays",
+      "summary": "Holidays are often the hardest stretch because the cultural messages about family are loudest.",
+      "how": [
+        "Plan early. Decide where you’ll be, who with, and who you’ll tell.",
+        "Build new rituals: chosen family, friends, a trip, a quiet day that’s yours.",
+        "Acknowledge the grief rather than pushing it away.",
+        "Mother’s and Father’s Day, birthdays and your own milestones deserve a plan too."
+      ],
+      "src": ["aw-estrange", "pt-choosing"]
+    },
+    {
+      "id": "par-cycles",
+      "phase": "hold",
+      "title": "Know that estrangement can cycle",
+      "summary": "Some people reconnect and then step back again. That doesn’t mean you’ve failed.",
+      "how": [
+        "If you’re tempted to reconnect, check whether anything has actually changed.",
+        "Lasting reconciliation usually needs real commitment, and often therapy, from both sides.",
+        "Start small, with brief, controlled contact, and state your limits in advance.",
+        "Be ready to step away again."
+      ],
+      "src": ["pt-estrange8", "sp-parents"]
+    },
+    {
+      "id": "par-grief",
+      "phase": "rebuild",
+      "title": "Grieve the parent you deserved",
+      "summary": "You can mourn what you needed and didn’t get, even while they’re alive.",
+      "how": [
+        "Name what you lost: the childhood, the support, the parent you hoped for.",
+        "Anger is common and can show you what wasn’t okay, but if it’s all you feel, it may keep you tied to them.",
+        "Healing and estrangement are separate things. Cutting contact doesn’t do the healing for you."
+      ],
+      "src": ["pt-estrange8", "aw-estrange"]
+    },
+    {
+      "id": "par-heal",
+      "phase": "rebuild",
+      "title": "Do the healing work, with help",
+      "summary": "Unlearning old coping habits and learning what you never got usually goes better with a skilled therapist.",
+      "how": [
+        "Look for a therapist who knows family estrangement, trauma, or emotionally immature parents.",
+        "Inner-child and “re-parenting” work can help with shame and self-doubt.",
+        "Expect trauma-like reactions in the first year: jumpiness, avoidance, intrusive thoughts.",
+        "Be patient. Your nervous system may take a year or more to settle."
+      ],
+      "src": ["sp-parents", "aw-estrange", "pt-estrange8"]
+    },
+    {
+      "id": "par-chosen",
+      "phase": "rebuild",
+      "title": "Build a chosen family",
+      "summary": "Support from friends, mentors and community can fill a real gap.",
+      "how": [
+        "Invest in people who respect your boundaries and show up.",
+        "Look for groups or communities of people who’ve been through it, ideally ones that respect your culture or faith.",
+        "Move your center of gravity: let decisions come from your own values, not from defense against your family."
+      ],
+      "src": ["sp-parents", "aw-estrange"]
+    },
+    {
+      "id": "par-reconcile",
+      "phase": "rebuild",
+      "title": "If you ever consider reconnecting",
+      "summary": "It’s your call, on your timeline, if it ever happens at all.",
+      "how": [
+        "Look for genuine accountability, steady respect for your boundaries, or real efforts such as therapy.",
+        "Don’t reconnect out of guilt or pressure if nothing has changed.",
+        "Start small, with brief, controlled contact, and set limits first.",
+        "Keep expectations modest and be ready to step away again."
+      ],
+      "src": ["sp-parents", "aw-estrange"]
+    }
+  ]
+}

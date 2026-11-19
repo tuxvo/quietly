@@ -1,0 +1,283 @@
+{
+  "id": "other",
+  "label": "Someone else",
+  "blurb": "A sibling, in-law, coworker, neighbor, online contact, or anyone not listed.",
+  "intro": {
+    "title": "Stepping away from someone else",
+    "body": [
+      "This covers the relationships that don’t fit the other paths: relatives, coworkers, classmates, neighbors, roommates, online contacts, and people in a group or community.",
+      "Many of these can’t be cut off completely. So alongside full no contact, this path covers limited contact, which is short, written, practical and unemotional."
+    ]
+  },
+  "questions": [
+    {
+      "id": "kind",
+      "type": "single",
+      "title": "Who is this person to you?",
+      "help": "Pick the closest fit.",
+      "options": [
+        { "id": "other_family", "label": "A sibling, in-law, or other relative" },
+        { "id": "other_work", "label": "A coworker, boss, classmate or teacher" },
+        { "id": "other_online", "label": "Someone online: a friend, follower or community member" },
+        { "id": "other_community", "label": "A neighbor, roommate, landlord, or someone in a group or faith community" }
+      ]
+    },
+    {
+      "id": "shared",
+      "type": "multi",
+      "title": "What is still tied together?",
+      "help": "Pick any that apply. It changes which steps you see.",
+      "options": [
+        { "id": "circle", "label": "We share friends, family or a community" },
+        { "id": "work", "label": "We work or study together" },
+        { "id": "housing", "label": "We share a home or building" },
+        { "id": "money", "label": "We share money or legal ties" }
+      ]
+    }
+  ],
+  "expect": [
+    { "title": "You may not be able to cut everything", "body": "Shared work, family or housing mean some contact stays. The goal then is contact that is brief, practical and calm." },
+    { "title": "Other people may weigh in", "body": "Relatives, colleagues or neighbors may take sides, ask for explanations, or pass messages." },
+    { "title": "Guilt is likely", "body": "Other people’s expectations about family or community obligations can be loud. You don’t have to meet someone else’s standards at the expense of your wellbeing." },
+    { "title": "Some pushback", "body": "If you set a limit and then enforce it, expect the other person to test it." }
+  ],
+  "steps": [
+    {
+      "id": "o-safety",
+      "phase": "prepare",
+      "title": "If you’re afraid of them",
+      "summary": "If this person has threatened you, followed you, or made you feel unsafe, plan before you change anything.",
+      "how": [
+        "Use the Safety page, and talk to an advocate or the police about options such as a protective order.",
+        "Document dates, times and what happened.",
+        "Don’t confront them. Tell trusted people and vary your routine."
+      ],
+      "tool": "safety",
+      "requires": ["safety"],
+      "src": ["ds-safety", "cc-grayrock"]
+    },
+    {
+      "id": "o-clarify",
+      "phase": "prepare",
+      "title": "Decide what “no contact” will mean here",
+      "summary": "Full no contact, or limited contact? Both are legitimate.",
+      "how": [
+        "List the ways this person can reach you: phone, messages, social media, shared spaces, mutual people.",
+        "For each, decide: block it, or keep it, and under which limits.",
+        "Where contact must continue, such as work or housing, plan to keep it short, written, and about the topic.",
+        "Write the plan down."
+      ],
+      "src": ["pw-nocontact", "pt-5strat"]
+    },
+    {
+      "id": "o-boundary",
+      "phase": "prepare",
+      "title": "Write your boundary and what you’ll do if it’s crossed",
+      "summary": "A boundary is about what you will do, not about controlling them.",
+      "how": [
+        "Be specific: what you will and won’t accept.",
+        "State the consequence in advance, such as leaving the conversation, and then follow through.",
+        "Describe how their behavior affects you rather than blaming them. It usually draws less defensiveness.",
+        "Rehearse it with someone you trust, with them playing the other person."
+      ],
+      "scripts": [
+        { "label": "Stating a limit", "text": "When the conversation turns to my choices, I’m going to leave it. If it comes up again, I’ll end the call." },
+        { "label": "Not explaining", "text": "I’m not going to discuss this." }
+      ],
+      "src": ["mha-boundaries", "pt-scripts35"]
+    },
+    {
+      "id": "o-fam-events",
+      "phase": "break",
+      "title": "Handle gatherings and family events",
+      "summary": "You can attend on your terms, or decline without a reason.",
+      "how": [
+        "Decline without an explanation if you want to. It’s allowed.",
+        "If you attend, set conditions: who will be there, where, and for how long.",
+        "Bring a buffer person and your own transportation so you can leave.",
+        "Don’t be alone with them, and have an exit line ready."
+      ],
+      "scripts": [
+        { "label": "Declining", "text": "Thanks for the invite. I won’t be able to make it." },
+        { "label": "Leaving", "text": "I’m going to head out now. Take care." }
+      ],
+      "requires": ["other_family"],
+      "src": ["pt-scripts35", "pt-5strat", "mha-boundaries"]
+    },
+    {
+      "id": "o-fam-inlaws",
+      "phase": "break",
+      "title": "If it’s an in-law or your partner’s family",
+      "summary": "A united front with your partner does most of the work.",
+      "how": [
+        "Agree on the boundary together, privately, before anyone else hears it.",
+        "Your partner communicates it to their own family. You don’t have to relay it.",
+        "Don’t vent to other relatives. It gets back.",
+        "Expect some testing and respond the same way each time."
+      ],
+      "requires": ["other_family"],
+      "src": []
+    },
+    {
+      "id": "o-fam-relay",
+      "phase": "hold",
+      "title": "When relatives take sides or carry messages",
+      "summary": "Be warm with the messenger and firm about the message.",
+      "how": [
+        "You don’t need to explain or debate the history.",
+        "Ask people not to pass messages or updates.",
+        "If someone keeps pushing, you can step back from them as well."
+      ],
+      "scripts": [
+        { "label": "Short and warm", "text": "I’m not in contact with them right now. I’d rather not get into why, and I’d love to talk about something else." }
+      ],
+      "requires": ["other_family"],
+      "src": ["sp-parents", "pt-estrange8"]
+    },
+    {
+      "id": "o-work-doc",
+      "phase": "prepare",
+      "title": "Keep a record",
+      "summary": "A clear paper trail protects you, and it’s hard to dispute.",
+      "how": [
+        "Note the date, time, place, what happened, and who saw it.",
+        "Save emails and messages, and keep copies where your employer’s or school’s policy allows.",
+        "Write things down soon after they happen, while you remember the details."
+      ],
+      "tool": "contact",
+      "requires": ["other_work"],
+      "src": []
+    },
+    {
+      "id": "o-work-channel",
+      "phase": "break",
+      "title": "Move to work-only, written communication",
+      "summary": "Keep contact boring, brief and in writing.",
+      "how": [
+        "Reply to work questions only, and keep it short and neutral.",
+        "Use shared channels or copy a manager when appropriate.",
+        "Avoid being alone with them. Meet with others present.",
+        "The “grey rock” approach, staying calm and uninteresting, can help in the short term."
+      ],
+      "scripts": [
+        { "label": "Redirecting", "text": "I’m happy to talk about the project. I’m not going to discuss anything else." }
+      ],
+      "requires": ["other_work"],
+      "src": ["cc-grayrock"]
+    },
+    {
+      "id": "o-work-report",
+      "phase": "break",
+      "title": "Tell your manager or HR",
+      "summary": "If it’s harassment, bullying or discrimination, there are formal routes.",
+      "how": [
+        "Read your workplace or school policy so you know the process.",
+        "Report in writing and keep a copy.",
+        "Ask for practical changes: a different team, schedule, seat or reporting line.",
+        "Look into an employee assistance program, a union rep, or legal aid if you need more."
+      ],
+      "requires": ["other_work"],
+      "src": []
+    },
+    {
+      "id": "o-online-block",
+      "phase": "break",
+      "title": "Block, mute and report",
+      "summary": "Online contact is the easiest to cut. Do it thoroughly.",
+      "how": [
+        "Screenshot anything threatening or harassing first.",
+        "Block them everywhere, including second accounts and shared groups.",
+        "Report harassment to the platform.",
+        "Tell friends not to share information about you with them."
+      ],
+      "requires": ["other_online"],
+      "src": ["ts-digital"]
+    },
+    {
+      "id": "o-online-privacy",
+      "phase": "break",
+      "title": "Shrink what they can find",
+      "summary": "Make it harder for them to find you again.",
+      "how": [
+        "Search yourself to see what’s public.",
+        "Remove personal details from profiles: address, phone, school, workplace, location tags.",
+        "Make accounts private and review followers, tags and tagged photos.",
+        "Turn on two-factor authentication and use unique passwords."
+      ],
+      "tool": "digital",
+      "requires": ["other_online"],
+      "src": ["ts-digital"]
+    },
+    {
+      "id": "o-online-threat",
+      "phase": "hold",
+      "title": "If they threaten you or share your information",
+      "summary": "This is harassment, and it can be reported.",
+      "how": [
+        "Don’t engage. Save screenshots with dates.",
+        "Report to the platform and, if there are threats, to the police.",
+        "Tell trusted people and use the Safety page."
+      ],
+      "tool": "safety",
+      "requires": ["other_online"],
+      "src": ["cc-hoover"]
+    },
+    {
+      "id": "o-comm-neighbor",
+      "phase": "break",
+      "title": "Neighbors, roommates and landlords",
+      "summary": "You often can’t move, so make the rules clear and keep it written.",
+      "how": [
+        "Keep communication in writing, short and polite.",
+        "Agree house rules in writing: noise, shared spaces, guests.",
+        "Consider a community mediation service. They’re often free or low cost.",
+        "Go to the landlord or housing authority for lease issues, and to the police if it becomes harassment."
+      ],
+      "requires": ["other_community"],
+      "src": []
+    },
+    {
+      "id": "o-comm-group",
+      "phase": "break",
+      "title": "Stepping back from a group or community",
+      "summary": "Leaving a group, or one person in it, can feel like leaving everyone.",
+      "how": [
+        "Decide what you’ll say, or whether to say anything.",
+        "Mute or leave group chats quietly.",
+        "Find other people and places, so you’re not left with a gap.",
+        "If the group pressures or shuns you, lean on your outside support."
+      ],
+      "requires": ["other_community"],
+      "src": []
+    },
+    {
+      "id": "o-limit",
+      "phase": "hold",
+      "title": "Keep contact limited when you can’t end it",
+      "summary": "Many contacts can’t be fully cut. Make them smaller and calmer.",
+      "how": [
+        "Spend time around other people, and avoid being alone with them.",
+        "Share little personal information, and keep conversations short.",
+        "Leave when conflict starts.",
+        "Don’t argue. Arguing rarely changes their mind and what you say can be used later.",
+        "Build up your support system."
+      ],
+      "src": ["pt-5strat", "cc-grayrock"]
+    },
+    {
+      "id": "o-pushback",
+      "phase": "hold",
+      "title": "Expect your boundary to be tested",
+      "summary": "A limit you enforce quietly and consistently is far more effective than one you explain at length.",
+      "how": [
+        "Repeat the same short response each time.",
+        "Follow through on the consequence you stated, calmly.",
+        "Their guilt-tripping belongs to them. It doesn’t mean you’re wrong."
+      ],
+      "scripts": [
+        { "label": "Repeating yourself", "text": "I understand you see it differently. My answer is the same." }
+      ],
+      "src": ["mha-boundaries", "pt-scripts35"]
+    }
+  ]
+}

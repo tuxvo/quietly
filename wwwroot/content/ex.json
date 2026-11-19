@@ -1,0 +1,365 @@
+{
+  "id": "ex",
+  "label": "An ex-partner",
+  "blurb": "Someone you were in a relationship with.",
+  "intro": {
+    "title": "A clean break from an ex",
+    "body": [
+      "Breakups blur. This path is built for a clean break, and for the moment you’ll want to undo it.",
+      "The goal isn’t to punish them or to make them miss you. It’s to stop reopening the wound so you have room to heal and see the relationship clearly."
+    ]
+  },
+  "questions": [
+    {
+      "id": "shared",
+      "type": "multi",
+      "title": "What is still tied together?",
+      "help": "Pick any that apply. It changes which steps you see.",
+      "options": [
+        { "id": "kids", "label": "We share children" },
+        { "id": "home", "label": "We live together, or share a lease or home" },
+        { "id": "money", "label": "We share money, debts or accounts" },
+        { "id": "work", "label": "We work or study together" },
+        { "id": "circle", "label": "We have mutual friends" },
+        { "id": "pets", "label": "We share a pet" }
+      ]
+    }
+  ],
+  "expect": [
+    { "title": "Waves, not a straight line", "body": "You’ll have good days and sudden bad ones. A bad day doesn’t mean the plan is failing." },
+    { "title": "They may try to come back", "body": "Apologies, “accidental” messages, a crisis, or messages through friends are common. The Hold the line phase covers how to answer." },
+    { "title": "Your mind will edit the story", "body": "Nostalgia keeps the highlights and drops the rest. Your reasons list is the corrective." },
+    { "title": "People will have opinions", "body": "Some friends will say you’re better off, which can feel unhelpful. Some will want you to patch it up. You can ask for the kind of support you actually want." },
+    { "title": "Seeing them with someone new can hurt", "body": "It’s normal, and it doesn’t mean you should reach out. Have a plan for the first time." }
+  ],
+  "steps": [
+    {
+      "id": "ex-danger",
+      "phase": "prepare",
+      "title": "Understand why timing matters",
+      "summary": "If this relationship was controlling or violent, how you leave matters as much as whether you leave.",
+      "how": [
+        "Abusers often escalate when they sense they’re losing control, and leaving can be the most dangerous time. That’s not a reason to stay. It’s a reason to plan.",
+        "Don’t confront them, announce it in person, or leave a note explaining why.",
+        "Work through the warning signs on the Safety page, and talk to an advocate about your own situation.",
+        "No contact may still be the safest long-term option. Plan the how and when first."
+      ],
+      "tool": "safety",
+      "requires": ["safety"],
+      "src": ["ds-safety"]
+    },
+    {
+      "id": "ex-order",
+      "phase": "prepare",
+      "title": "Ask about a protective order",
+      "summary": "An order can give police grounds to act if they contact, find, or stalk you.",
+      "how": [
+        "Ask a local domestic violence program or the court clerk how orders work where you live. Rules vary.",
+        "Bring your documentation: messages, dates, photos, reports.",
+        "If you get one, keep a copy with you and give copies to your employer or school.",
+        "Record any violation, and report it."
+      ],
+      "tool": "safety",
+      "requires": ["safety"],
+      "src": ["ds-safety"]
+    },
+    {
+      "id": "ex-decide",
+      "phase": "prepare",
+      "title": "Be clear what this is for",
+      "summary": "No contact helps you heal and see clearly. It isn’t a tactic to make them chase you.",
+      "how": [
+        "Ask yourself honestly: am I doing this to heal, to be safe, or to get a reaction? Only the first two will hold.",
+        "A therapist’s guidance: don’t resume contact until you feel confident in the decision to end things. If you’re still preoccupied or tempted to reach out, you likely need more time.",
+        "Friendship can sometimes come later, but only after a real stretch of no contact and only if you feel genuinely happy for them.",
+        "If you’re truly unsure and it’s safe to talk, a defined break with agreed dates is different from silent no contact."
+      ],
+      "requires": ["stage_deciding"],
+      "src": ["pw-nocontact"]
+    },
+    {
+      "id": "ex-home",
+      "phase": "prepare",
+      "title": "Sort out where you’ll live",
+      "summary": "Shared housing is the biggest reason a no-contact plan falls apart. Settle the practical side first.",
+      "how": [
+        "Find out whose name is on the lease or mortgage and what your rights are. A tenants’ organization or legal aid can tell you.",
+        "Pick a place to stay and a move-out date. If needed, sleep elsewhere for now.",
+        "Photograph shared property and keep copies of your ID, lease and bank documents.",
+        "If they have a key and shouldn’t, change the locks once you’re entitled to do so."
+      ],
+      "variants": [
+        {
+          "when": "safety",
+          "summary": "Moving out is often the riskiest part of leaving. Plan it with an advocate rather than alone.",
+          "how": [
+            "Ask an advocate about shelter options, safe timing, and changing locks.",
+            "Ask the police or an advocate whether someone can accompany you to collect belongings.",
+            "Keep documents and a packed bag outside the home.",
+            "Don’t tell them where you’re going."
+          ]
+        }
+      ],
+      "requires": ["home"],
+      "src": ["cc-hoover", "ds-safety"]
+    },
+    {
+      "id": "ex-money",
+      "phase": "prepare",
+      "title": "Untangle the money",
+      "summary": "Joint accounts and shared bills create reasons to talk. Separate them early.",
+      "how": [
+        "List joint accounts, cards, loans, subscriptions, and who pays each.",
+        "Open an account in your name only, with a new login and PIN, and redirect your pay.",
+        "Get copies of statements and tax documents. Check your credit report for anything you don’t recognize.",
+        "Remove saved payment methods from shared devices and apps.",
+        "Get legal or financial advice before closing joint accounts or dividing debts."
+      ],
+      "requires": ["money"],
+      "src": ["ts-digital"]
+    },
+    {
+      "id": "ex-things",
+      "phase": "prepare",
+      "title": "Get your belongings back once, without a visit",
+      "summary": "Belongings are the classic excuse for “one more conversation”. Make it a single, boring handoff.",
+      "how": [
+        "Each of you makes a list of what the other has.",
+        "Use a third party: a friend, a locker, a drop-off at a neutral place. Agree a day and time in writing.",
+        "Let go of low-value things. A few items aren’t worth another round of contact.",
+        "If safety is a concern, ask the police or an advocate about an escorted pickup."
+      ],
+      "src": ["pw-nocontact"]
+    },
+    {
+      "id": "ex-kids",
+      "phase": "prepare",
+      "title": "Switch to low-contact co-parenting",
+      "summary": "With children, full no contact usually isn’t possible. The aim is contact that is only about them, and as little as possible.",
+      "how": [
+        "Talk only about the children: schedules, health, school. Not the relationship or the past.",
+        "Keep it written and short, in an app or email that keeps a record. Some courts require one.",
+        "Make the schedule predictable and written. Hand-offs brief and neutral, and never use your child as a messenger.",
+        "In high-conflict situations, parallel parenting means each parent runs their own time and you rarely need to coordinate. A mediator or court sets the rules.",
+        "At events, sit apart or alternate, and share anything important to the child’s safety or schooling."
+      ],
+      "scripts": [
+        { "label": "A short, neutral reply", "text": "Thanks for letting me know. Saturday at 10 works. I’ll drop off at the front desk." }
+      ],
+      "variants": [
+        {
+          "when": "safety",
+          "summary": "Safety changes the plan. Talk to an advocate and a family lawyer before negotiating anything directly.",
+          "how": [
+            "Ask about supervised or third-party exchanges, and court-ordered communication through an app.",
+            "Keep every message on a record-keeping app.",
+            "Don’t discuss your location or routine.",
+            "Tell the school who is allowed to collect the children."
+          ]
+        }
+      ],
+      "requires": ["kids"],
+      "src": ["cc-parallel", "pw-nocontact"]
+    },
+    {
+      "id": "ex-work",
+      "phase": "prepare",
+      "title": "Handle contact at work or school",
+      "summary": "Work contact is allowed. Make it work-only and unemotional.",
+      "how": [
+        "Stick to work topics, in work channels, in writing where you can.",
+        "Be polite and brief. Skip small talk.",
+        "If you can, ask for a different team, shift, desk or schedule.",
+        "If contact becomes unwelcome or harassing, document it and tell a manager or HR."
+      ],
+      "scripts": [
+        { "label": "Keeping it professional", "text": "Happy to talk about the project. I’m not going to discuss anything personal at work." }
+      ],
+      "requires": ["work"],
+      "src": ["pw-nocontact"]
+    },
+    {
+      "id": "ex-circle",
+      "phase": "prepare",
+      "title": "Navigate mutual friends",
+      "summary": "Friends are a common side door. Be clear without making anyone choose.",
+      "how": [
+        "Ask them not to pass messages or news either way, and not to tell you about the ex.",
+        "Don’t ask about them. Skip events they’ll be at for now.",
+        "Mute group chats instead of leaving in a huff.",
+        "Spend one-on-one time with friends who support you without picking the breakup apart over and over.",
+        "Accept that some friendships may cool, and some will deepen."
+      ],
+      "scripts": [
+        { "label": "To a mutual friend", "text": "I’m taking a break from contact with them. I’d love to stay close to you, but please don’t pass things between us or tell me what they’re up to." }
+      ],
+      "requires": ["circle"],
+      "src": ["pw-nocontact", "cc-hoover"]
+    },
+    {
+      "id": "ex-pets",
+      "phase": "prepare",
+      "title": "Sort out the pet",
+      "summary": "Pets are easy to use as a reason to keep talking.",
+      "how": [
+        "Agree ownership or a schedule in writing and keep it simple.",
+        "Hand off through a third party. Don’t use the pet as a way to start a conversation.",
+        "If safety is a concern, pets can be used as leverage. Include them in your safety plan and ask about pet-friendly shelters."
+      ],
+      "requires": ["pets"],
+      "src": ["ds-safety"]
+    },
+    {
+      "id": "ex-message",
+      "phase": "break",
+      "title": "Decide whether to send one final message",
+      "summary": "You don’t have to. If you do, make it short, clear and final.",
+      "how": [
+        "Three valid options: no message at all, one brief message, or a boundary message only after repeated contact.",
+        "If you send one: say what you’re doing, not what they did wrong. No questions, no invitation to reply, no explanations to rebut.",
+        "Keep a copy, then block or mute so you aren’t waiting for a reply.",
+        "Don’t draft it when you’re hurting. Put it in the unsent box first and sleep on it."
+      ],
+      "scripts": [
+        { "label": "A short final message", "text": "I’ve decided to end contact so that I can move forward. Please don’t contact me. I wish you well." },
+        { "label": "After they keep reaching out", "text": "I’ve asked you not to contact me. I won’t be replying to any further messages." }
+      ],
+      "variants": [
+        {
+          "when": "safety",
+          "summary": "Don’t send anything yet. A message can escalate things.",
+          "how": [
+            "Ask an advocate whether to send anything at all, and when.",
+            "If an order is in place, follow its terms and let the court or a lawyer handle any communication.",
+            "If you ever do respond, keep it factual and short, and save it."
+          ]
+        }
+      ],
+      "src": ["sp-friend", "cc-hoover"]
+    },
+    {
+      "id": "ex-photos",
+      "phase": "break",
+      "title": "Put the reminders away",
+      "summary": "Away, not destroyed in a rage. You can decide later what to keep.",
+      "how": [
+        "Move photos and messages to a locked folder, or hand a box to a friend.",
+        "Take them off your lock screen and wallpaper, and turn off “memories” features.",
+        "Pack gifts and keepsakes in a box out of sight.",
+        "Keep anything that could be evidence of harassment, threats or abuse."
+      ],
+      "src": ["pw-nocontact"]
+    },
+    {
+      "id": "ex-hoover",
+      "phase": "hold",
+      "title": "Expect comeback attempts",
+      "summary": "Knowing the usual patterns takes away much of their power.",
+      "how": [
+        "Common patterns: an apology with a big promise, sudden warmth or gifts, “accidental” texts, birthday and holiday messages, going through friends, a sudden crisis, or a smear campaign.",
+        "They work because they feel hopeful, especially if you’re warm, or the relationship was intense.",
+        "Respond neutrally, or not at all. Ask your friends to do the same.",
+        "Document everything, and report threats or stalking."
+      ],
+      "tool": "contact",
+      "src": ["cc-hoover", "pt-hoover"]
+    },
+    {
+      "id": "ex-closure",
+      "phase": "hold",
+      "title": "Get closure without them",
+      "summary": "The explanation you’re waiting for may never come, and a final talk rarely delivers it anyway.",
+      "how": [
+        "Write the whole letter, everything you’d say, and don’t send it.",
+        "Answer your own questions: what did I need, what did I learn, what would I do differently?",
+        "Accept what you can’t change. Acceptance isn’t approval, it just lowers the weight you carry.",
+        "Re-read your honest list when you’re missing them."
+      ],
+      "src": ["pt-14ways", "pw-nocontact"]
+    },
+    {
+      "id": "ex-sex",
+      "phase": "hold",
+      "title": "Don’t go back to the bed",
+      "summary": "A “just once” reunion resets the clock.",
+      "how": [
+        "Sexual reunions complicate healing. One study linked using sex to cope with anger or distress to slower recovery.",
+        "Consider a 30-day pause as a minimum.",
+        "If you feel tempted, go to the urge toolkit before you reply to anything."
+      ],
+      "tool": "urge",
+      "unless": ["safety"],
+      "src": ["pt-14ways"]
+    },
+    {
+      "id": "ex-seeing",
+      "phase": "hold",
+      "title": "Plan for running into them",
+      "summary": "The first meeting is rough. A default plan makes it manageable.",
+      "how": [
+        "Decide ahead: a neutral nod or hello, then leave. No catching up.",
+        "Have an exit line ready and, if you can, your own way home.",
+        "Plan something comforting for afterwards.",
+        "Seeing them with someone new can hurt. That’s normal and doesn’t mean you should reach out."
+      ],
+      "scripts": [
+        { "label": "An exit line", "text": "Hi. I’m just heading out. Take care." }
+      ],
+      "src": ["pw-nocontact"]
+    },
+    {
+      "id": "ex-stalk",
+      "phase": "hold",
+      "title": "If they keep showing up or watching",
+      "summary": "Repeated unwanted contact isn’t a politeness problem. It may be stalking.",
+      "how": [
+        "Don’t confront them. Write down the date, time and what happened, and save any messages or photos.",
+        "Tell trusted people and your employer. Vary your routine.",
+        "Report it, and ask an advocate about protective orders and stalking charges where you live.",
+        "Check your accounts and devices again for tracking or access."
+      ],
+      "tool": "safety",
+      "requires": ["safety"],
+      "src": ["cc-hoover", "ds-safety"]
+    },
+    {
+      "id": "ex-rebound",
+      "phase": "hold",
+      "title": "Be careful with a rebound",
+      "summary": "A new person can feel like relief and still delay the healing.",
+      "how": [
+        "Dating to fill the gap often means carrying the old relationship into the new one.",
+        "Reconnect with old friends first and spend some time on your own.",
+        "When you do date, go slowly and notice whether the new person respects your boundaries."
+      ],
+      "src": ["pt-14ways"]
+    },
+    {
+      "id": "ex-trust",
+      "phase": "rebuild",
+      "title": "Rebuild trust in yourself",
+      "summary": "After a controlling or manipulative relationship, it’s common to doubt your own read on things.",
+      "how": [
+        "Name the pattern. Understanding it makes it less confusing.",
+        "Work with a counselor if you can, to spot manipulation and heal.",
+        "Practice small decisions and notice they go fine.",
+        "Watch how people treat you over time, not just at the start."
+      ],
+      "unless": [],
+      "src": ["cc-hoover", "gt-5steps"]
+    },
+    {
+      "id": "ex-friend",
+      "phase": "rebuild",
+      "title": "Friends with an ex someday?",
+      "summary": "Sometimes, but not as a way back in.",
+      "how": [
+        "Only after a real no-contact stretch, and only if you feel truly fine about their life.",
+        "Check your motives: is this friendship, or hope in disguise?",
+        "If the relationship was controlling or abusive, friendship probably isn’t a good idea."
+      ],
+      "unless": ["safety"],
+      "src": ["pw-nocontact"]
+    }
+  ]
+}

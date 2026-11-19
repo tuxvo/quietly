@@ -1,0 +1,281 @@
+{
+  "id": "friend",
+  "label": "A friend",
+  "blurb": "A current or former close friend.",
+  "intro": {
+    "title": "Stepping away from a friend",
+    "body": [
+      "Friend breakups are real breakups, and there’s usually less language and less support for them. Many people feel awkward even admitting how much it hurts.",
+      "This path helps you work out what you actually want, choose how to do it, and handle the group, the guilt, and the loneliness afterwards."
+    ]
+  },
+  "questions": [
+    {
+      "id": "shared",
+      "type": "multi",
+      "title": "What is still tied together?",
+      "help": "Pick any that apply. It changes which steps you see.",
+      "options": [
+        { "id": "circle", "label": "We share a friend group or community" },
+        { "id": "work", "label": "We work or study together" },
+        { "id": "housing", "label": "We live together or share a space" },
+        { "id": "money", "label": "One of us owes the other money, or has the other’s things" }
+      ]
+    }
+  ],
+  "expect": [
+    { "title": "It can hurt as much as a romantic breakup", "body": "Grief for a friendship is real, and it isn’t overreacting." },
+    { "title": "They may not take it well", "body": "Some people respond with hurt, anger, or promises to change. You can be kind and still hold your decision." },
+    { "title": "Mutual friends may feel caught in the middle", "body": "Not everyone will handle it well. Try not to make anyone choose." },
+    { "title": "Guilt and second thoughts", "body": "Choosing your own wellbeing isn’t selfish. Second thoughts don’t cancel your reasons." },
+    { "title": "Loneliness", "body": "Missing someone is not an instruction to go back. It’s a signal to look after yourself and your other connections." }
+  ],
+  "steps": [
+    {
+      "id": "fr-safety",
+      "phase": "prepare",
+      "title": "If this friend is controlling or threatening",
+      "summary": "A calm, honest talk isn’t always safe. Choose a method that protects you first.",
+      "how": [
+        "Skip the face-to-face conversation. A brief written message, or simply stepping back, is safer.",
+        "Keep a copy of anything you send and anything they send back.",
+        "Tell someone you trust. Avoid shared spaces and keep your accounts and location private.",
+        "Use the Safety page and, if you feel in danger, call your local emergency number."
+      ],
+      "tool": "safety",
+      "requires": ["safety"],
+      "src": ["sp-friend", "cc-grayrock"]
+    },
+    {
+      "id": "fr-type",
+      "phase": "prepare",
+      "title": "Work out whether this is a drift or a rift",
+      "summary": "A drift is when nothing bad happened and you’ve grown apart. A rift is when a specific hurt did the damage. What you do next depends on which it is.",
+      "how": [
+        "Journal about how you feel afterwards: drained, resentful, or lighter?",
+        "Look at the pattern. Is it one bad stretch or a long habit?",
+        "Talk to a trusted friend, who may spot things you’ve missed.",
+        "Decide what you actually want: take a break, see them less, or end it."
+      ],
+      "tool": "journal",
+      "requires": ["stage_deciding"],
+      "src": ["sp-friend"]
+    },
+    {
+      "id": "fr-method",
+      "phase": "prepare",
+      "title": "Choose how you’ll do it",
+      "summary": "There are three honest ways. Pick the one that fits the person and the situation.",
+      "how": [
+        "A direct conversation, in person at a neutral place with few distractions, gives the most closure.",
+        "A short written message is better if emotions run high or you fear their reaction. Keep it brief, and keep a copy.",
+        "Fading out slowly is gentler, and leaves them without closure.",
+        "Ghosting leaves the least closure and can be confusing and hurtful. It can be justified if they’re toxic or unsafe."
+      ],
+      "src": ["sp-friend"]
+    },
+    {
+      "id": "fr-circle",
+      "phase": "prepare",
+      "title": "Navigate the friend group",
+      "summary": "Don’t make mutual friends pick sides.",
+      "how": [
+        "Don’t badmouth them to the group. It tends to come back around.",
+        "Keep one-on-one time with the friends who matter to you.",
+        "Mute group chats rather than making a scene.",
+        "Skip events they’ll be at for a while, or go for a short time with a buddy.",
+        "Accept that some friendships may cool, and let it be okay."
+      ],
+      "scripts": [
+        { "label": "To a mutual friend", "text": "I’m taking some distance from them. I don’t want to put you in the middle, so I won’t ask you to take sides. I’d like us to keep seeing each other." }
+      ],
+      "requires": ["circle"],
+      "src": ["sp-friend"]
+    },
+    {
+      "id": "fr-stuff",
+      "phase": "prepare",
+      "title": "Settle borrowed things and money once",
+      "summary": "Debts and belongings are a common reason a break doesn’t stay broken.",
+      "how": [
+        "Make a list of what each of you has of the other’s.",
+        "Return items through a third party or a drop-off, at an agreed time, in writing.",
+        "For money, agree a clear plan in writing, or decide to let it go.",
+        "Keep it brief and written. Don’t use it as a reason to chat."
+      ],
+      "requires": ["money"],
+      "src": []
+    },
+    {
+      "id": "fr-housing",
+      "phase": "prepare",
+      "title": "If you share a home",
+      "summary": "You can’t avoid each other completely, so set simple rules for the space.",
+      "how": [
+        "Agree to keep talk to practical matters, in writing where possible.",
+        "Set quiet hours and a schedule for shared spaces.",
+        "Look at your lease: subletting, moving out, or a mediator through a community mediation service.",
+        "Pick a realistic move date and begin planning."
+      ],
+      "requires": ["housing"],
+      "src": []
+    },
+    {
+      "id": "fr-work",
+      "phase": "prepare",
+      "title": "If you work or study together",
+      "summary": "Professional only: polite, brief, and about the work.",
+      "how": [
+        "Keep contact to work topics and work channels.",
+        "Be courteous, skip personal chat, and avoid being alone with them if you’re uneasy.",
+        "If it becomes harassment, document it and tell a manager or HR."
+      ],
+      "scripts": [
+        { "label": "Keeping it professional", "text": "Happy to work on this together. I’d rather keep us to work topics." }
+      ],
+      "requires": ["work"],
+      "src": ["pw-nocontact"]
+    },
+    {
+      "id": "fr-say",
+      "phase": "break",
+      "title": "Say it clearly and kindly",
+      "summary": "A kind, clear message is easier to stick to than a vague one.",
+      "how": [
+        "Start with what you valued, then say the issue.",
+        "Use “I” statements and be specific. Describe your experience, not their flaws.",
+        "Avoid “it’s not you, it’s me”. It can sound dismissive.",
+        "Say plainly what you want: less contact, a break, or an end.",
+        "Finish kindly, and don’t promise more than you mean."
+      ],
+      "scripts": [
+        { "label": "Starting a direct conversation", "text": "I value our friendship, and that’s why I want to be honest. I’ve noticed I often feel drained after we spend time together, and I need to step back." },
+        { "label": "A written message", "text": "I’ve thought about this a lot. I’m going to step back from our friendship. I’m grateful for the good times and I wish you well. I won’t be replying to messages for now." },
+        { "label": "A clean break", "text": "I’ve decided to end our friendship. I’m not looking to argue about it. I wish you all the best." }
+      ],
+      "src": ["sp-friend"]
+    },
+    {
+      "id": "fr-response",
+      "phase": "break",
+      "title": "Handle their reaction",
+      "summary": "You can be compassionate and still not change your mind.",
+      "how": [
+        "Let them speak without interrupting, and acknowledge their feelings without agreeing.",
+        "If they promise to change, ask whether it addresses the core issue, and whether you believe it.",
+        "Calmly repeat your decision. You don’t have to win the argument.",
+        "You can end the conversation any time."
+      ],
+      "scripts": [
+        { "label": "When they promise to change", "text": "I appreciate you saying that. Ultimately, I need space, and my decision stays the same." }
+      ],
+      "src": ["sp-friend"]
+    },
+    {
+      "id": "fr-socials",
+      "phase": "break",
+      "title": "Sort out social media",
+      "summary": "Quiet and private beats dramatic.",
+      "how": [
+        "Mute or unfollow if you honestly won’t look. Block if you will.",
+        "Don’t post vague or pointed content about them, and don’t reply to theirs.",
+        "Review who can see your posts and what you’re tagged in.",
+        "If they harass you, screenshot it before blocking."
+      ],
+      "src": ["pt-14ways", "ts-digital"]
+    },
+    {
+      "id": "fr-reach",
+      "phase": "hold",
+      "title": "When they reach out",
+      "summary": "A friend may try an apology, a nudge through others, or guilt. Use a plan, not a feeling.",
+      "how": [
+        "If you’re not ready, no reply is fine.",
+        "If you reply, one calm sentence that repeats your decision.",
+        "Look for whether they’re addressing the actual issue, or just wanting things back to normal.",
+        "Log the contact."
+      ],
+      "scripts": [
+        { "label": "A short reply", "text": "Thanks for reaching out. I meant what I said, and I’m not ready for contact." }
+      ],
+      "tool": "contact",
+      "src": ["sp-friend", "cc-hoover"]
+    },
+    {
+      "id": "fr-guilt",
+      "phase": "hold",
+      "title": "Don’t let guilt pull you back",
+      "summary": "Looking after your wellbeing isn’t selfish.",
+      "how": [
+        "Name it: “this is guilt, not new information.”",
+        "Read your reasons.",
+        "Don’t let pressure or manipulation drag you back.",
+        "Talk it through with someone on your side."
+      ],
+      "tool": "reasons",
+      "src": ["sp-friend"]
+    },
+    {
+      "id": "fr-retaliation",
+      "phase": "hold",
+      "title": "If they gossip or retaliate",
+      "summary": "Some people lash out. Stay out of it.",
+      "how": [
+        "Don’t defend yourself publicly or retaliate. Rumors usually fade faster without feeding them.",
+        "Screenshot harassment and keep a record.",
+        "Tell a couple of trusted people what’s going on, so you’re not carrying it alone.",
+        "If there are threats or you fear for your safety, use the Safety page and report it."
+      ],
+      "src": ["sp-friend", "cc-hoover"]
+    },
+    {
+      "id": "fr-lonely",
+      "phase": "hold",
+      "title": "Look after the loneliness",
+      "summary": "Missing a friend is normal and it doesn’t mean you should go back.",
+      "how": [
+        "Schedule social time each week, even something small.",
+        "Reconnect with people you’ve drifted from.",
+        "Join something regular: a class, a group, a team.",
+        "Lean on a “backup” person for the moments you feel the pull."
+      ],
+      "src": ["pt-14ways"]
+    },
+    {
+      "id": "fr-grief",
+      "phase": "rebuild",
+      "title": "Allow the grief",
+      "summary": "Losing a friendship deserves the same kindness as any other loss.",
+      "how": [
+        "Don’t minimize it because “it’s just a friend”.",
+        "Write about what the friendship gave you, and what it cost.",
+        "Let yourself be sad without letting sadness make decisions."
+      ],
+      "src": ["gt-5steps"]
+    },
+    {
+      "id": "fr-door",
+      "phase": "rebuild",
+      "title": "Decide whether the door is open or closed",
+      "summary": "Both are fine. Just be honest about which one.",
+      "how": [
+        "If you want to leave it open, choose a time to reassess, such as a year, and don’t keep checking before then.",
+        "If you want it closed, say so clearly and respectfully.",
+        "Remember the old issues may return. You may need to end it again."
+      ],
+      "src": ["sp-friend"]
+    },
+    {
+      "id": "fr-patterns",
+      "phase": "rebuild",
+      "title": "Decide what you want from friendships",
+      "summary": "Use what you learned to choose better, not to withdraw.",
+      "how": [
+        "Write down what a good friend does, and what you want to do differently.",
+        "Notice early signs: one-sided effort, put-downs, pressure, secrecy.",
+        "Put your energy into friendships that feel reciprocal."
+      ],
+      "src": ["gt-5steps"]
+    }
+  ]
+}
