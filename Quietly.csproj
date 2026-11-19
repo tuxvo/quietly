@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- Written for .NET 10 (long-term support). If only a newer .NET (such as 11) is installed, run on that instead of failing. -->
+    <RollForward>Major</RollForward>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Quietly</RootNamespace>
+    <Version>1.0.0</Version>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <!-- lets `dotnet user-secrets set "Gemini:ApiKey" "..."` keep the API key outside the project folder -->
+    <UserSecretsId>quietly-local-dev</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- SQLite driver. If your SDK is a different major version, run: dotnet add package Microsoft.Data.Sqlite -->
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\schema.sql" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
